@@ -78,10 +78,13 @@ nav.toc{margin:36px 0 20px; padding:26px 28px; background:var(--paper-2); border
 nav.toc h2{border:none; margin:0 0 16px; padding:0; font-size:1rem; font-family:var(--mono); font-weight:600;
   letter-spacing:.16em; text-transform:uppercase; color:var(--muted);}
 nav.toc h2::before{display:none;}
-ul.toc-list{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:4px 28px;}
-ul.toc-list li{padding:7px 0; border-bottom:1px solid var(--line); font-size:14px; color:var(--muted); line-height:1.4;}
+ul.toc-list{list-style:none; margin:0; padding:0; columns:2; column-gap:36px;}
+ul.toc-list > li{padding:7px 0; border-bottom:1px solid var(--line); font-size:14px; color:var(--muted); line-height:1.4; break-inside:avoid;}
 ul.toc-list li a{font-family:var(--display); font-weight:600; font-size:15.5px; color:var(--ink); text-decoration:none; margin-right:6px;}
 ul.toc-list li a:hover{color:var(--pine);}
+ul.toc-list ul{list-style:none; margin:6px 0 0; padding-left:16px;}
+ul.toc-list ul li{padding:3px 0; border:none; font-size:13px;}
+ul.toc-list ul li a{font-size:14px;}
 @media(max-width:680px){ul.toc-list{grid-template-columns:1fr}}
 
 /* ---------- section headings ---------- */
@@ -135,6 +138,10 @@ table.scoreboard thead th:last-child{width:34%;}
 table.scoreboard td.rk{font-family:var(--display); font-weight:900; font-size:1.1rem; color:var(--muted);
   width:54px; text-align:center;}
 table.scoreboard td:nth-child(2){font-family:var(--display); font-weight:600; font-size:16px; color:var(--ink);}
+table.scoreboard a.svc-link{color:inherit; text-decoration:none; border-bottom:1px dotted var(--line-2);}
+table.scoreboard a.svc-link:hover{color:var(--pine); border-bottom-color:var(--pine);}
+table.scoreboard a.svc-link::after{content:" ›"; color:var(--brass); font-weight:700; opacity:0; transition:opacity .2s;}
+table.scoreboard tr:hover a.svc-link::after{opacity:1;}
 table.scoreboard td:nth-child(3){font-family:var(--mono); color:var(--muted); font-size:13px;}
 table.scoreboard td.sc{vertical-align:middle;}
 table.scoreboard .scv{font-family:var(--mono); font-weight:600; font-size:15px; color:var(--pine-2); display:inline-block; width:46px;}
@@ -180,12 +187,6 @@ table.scoreboard tr.medal-3 td.rk{color:var(--bronze);}
 <h1
 id="membership-health-testing-services-comprehensive-comparison-report">Membership
 Health Testing Services: Comprehensive Comparison Report</h1>
-<p><em>Last updated: 2026-06-09. Value is a 50/50 blend of
-cost-efficiency (price per directly-measured biomarker + draws/year) and
-absolute affordability (annual price), so a low total cost is rewarded
-alongside a low cost per test. All 1-10 category scores reflect a
-cross-provider consistency pass that aligns each service to its rubric
-band.</em></p>
 <p><em>Category weights set to Priority Coverage 5% · Total Coverage 30%
 · Value 30% · Frequency 10% · Unique Features 10% · Data Access 10% ·
 Convenience 5%.</em></p>
@@ -214,10 +215,10 @@ ranked table with verdicts + disqualified services</li>
 profiles for 4 confirmed + 10 discovered services
 <ul>
 <li><a href="#s3a-confirmed-service-profiles">S3a. Confirmed</a> --
-Function Health, Superpower, Hundred Health, Mito Health</li>
+Function Health, Hundred Health, Superpower, Mito Health</li>
 <li><a href="#s3b-discovered-service-profiles">S3b. Discovered</a> --
-Lifeforce, Wild Health, Fountain Life, SiPhox, Parsley, InsideTracker,
-WHOOP, Ultrahuman, Geviti, Empirical</li>
+SiPhox, WHOOP, Empirical, InsideTracker, Ultrahuman, Lifeforce, Parsley,
+Geviti, Wild Health, Fountain Life</li>
 </ul></li>
 <li><a href="#s4-scoring-methodology-output-2">S4. Scoring Methodology
 (Output 2)</a> -- 7-category weighted rubric with 1-10 scales</li>
@@ -231,7 +232,7 @@ Service-by-service scoring with justifications</li>
 <li><a href="#s8-recommendations-output-5">S8. Recommendations (Output
 5)</a> -- Best overall, best value, best data integration, best
 monitoring, avoid list, recommended combination</li>
-<li><a href="#s9-open-questions">S9. Open Questions</a> -- 51 unresolved
+<li><a href="#s9-open-questions">S9. Open Questions</a> -- Open
 questions by category</li>
 <li><a href="#s10-sources">S10. Sources</a> -- External sources used in
 this report</li>
@@ -243,8 +244,9 @@ blood-testing service for comprehensive longevity monitoring</strong>
 (7.45/10) — the broadest directly-measured panel (~92 markers), two
 draws a year, and strong value. <strong>Hundred Health ($199/yr) is the
 best value</strong> and the lowest-cost service with confirmed Garmin
-sync, if a leaner core panel is acceptable. Fifteen services were scored
-on a transparent 7-category weighted rubric (Total Coverage and Value
+sync plus automated full medical-record import (450+ EHR systems), if a
+leaner core panel is acceptable. Fifteen services were scored on a
+transparent 7-category weighted rubric (Total Coverage and Value
 weighted highest, 30% each); every score comes from a published engine
 that anyone can re-weight and re-run. No single service covers the full
 45-test reference panel, so completing it takes some à-la-carte gap-fill
@@ -1280,138 +1282,7 @@ industry observers. The criticism is worth noting but should be weighed
 against the company's transparent use of established lab
 infrastructure.</p>
 <hr />
-<h4 id="s3a-2-superpower-199-388year--superpowercom">S3a-2. Superpower
-($199-$388/year) | <a
-href="https://superpower.com">superpower.com</a></h4>
-<p><strong>Pricing</strong></p>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Price/year</strong></td>
-<td>$199 (Baseline); $388 (Baseline + Advanced Panel)</td>
-</tr>
-<tr>
-<td><strong>Draws/year</strong></td>
-<td>1 included</td>
-</tr>
-<tr>
-<td><strong>Cost per draw</strong></td>
-<td>$199 (Baseline) or $388 (with Advanced)</td>
-</tr>
-<tr>
-<td><strong>Tiers</strong></td>
-<td>Single membership + add-on panels (Advanced $189, Cardiovascular
-$159, Metabolic $129, Autoimmunity $139, Heavy Metals $129, and
-more)</td>
-</tr>
-<tr>
-<td><strong>At-home draw</strong></td>
-<td>+$99-119 per draw</td>
-</tr>
-<tr>
-<td><strong>HSA/FSA</strong></td>
-<td>Yes</td>
-</tr>
-<tr>
-<td><strong>Cancellation</strong></td>
-<td>No refunds; no cancel button in dashboard; FTC Click-to-Cancel
-concerns</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Biomarker Count:</strong> ~55 directly measured (Baseline) |
-~87 with Advanced | ~40 calculated ratios inflate "100+" claim</p>
-<p><strong>Critical inflation note:</strong> Superpower's "100+"
-marketing is the most aggressively inflated. ~40 calculated ratios
-counted as separate biomarkers. Function Health filed a federal lawsuit
-(Jan 2026, Case 2:26-cv-00810) alleging false advertising.</p>
-<p><strong>45-Panel Coverage: 17/45 Baseline (38%) | 33-34/45 with
-Advanced (73-76%)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Count</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Directly measured (Baseline $199)</td>
-<td>17</td>
-<td>CBC, CMP, Lipid, HbA1c, GGT, Uric Acid, TSH (old methodology), Total
-T, Estradiol, SHBG, DHEA-S, Vit D, Ferritin, Iron Panel, hs-CRP, ApoB,
-Cortisol. Count corrected from 20: TSH uses old methodology (not Free
-T3/T4), Free T calculated not measured, and Fasting Insulin not in
-baseline.</td>
-</tr>
-<tr>
-<td>Added with Advanced ($388)</td>
-<td>+13</td>
-<td>Fasting Insulin, Free T3, TPO Ab, TgAb, LH, FSH, Prolactin, B12,
-Folate, Homocysteine, ESR, Lp(a), IGF-1, PSA, LDL-P</td>
-</tr>
-<tr>
-<td>Missing from ALL panels</td>
-<td>11</td>
-<td>C-Peptide, RBC Mg, Zinc, Selenium, Copper, Ceruloplasmin,
-Fibrinogen, LP-PLA2, Oxidized LDL, Omega-3, Cystatin C</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Key Features</strong></p>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Status</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dashboard/App</td>
-<td>iOS 4.9/5 (173 ratings), Web</td>
-<td>"Most beautiful health platform" but "very light" analysis</td>
-</tr>
-<tr>
-<td>Garmin integration</td>
-<td><strong>Yes (v1.0.6, March 2026)</strong></td>
-<td>Quality/depth unverified post-update</td>
-</tr>
-<tr>
-<td>Data export</td>
-<td>"Download or delete your data"</td>
-<td>Format unspecified</td>
-</tr>
-<tr>
-<td>Physician access</td>
-<td>SMS concierge only</td>
-<td>Health coaches, NOT physicians</td>
-</tr>
-<tr>
-<td>Supplement marketplace</td>
-<td>Aggressive upsell</td>
-<td>AI recommends $400+/month from own marketplace</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Notable Strengths:</strong> Lowest entry price ($199/yr).
-Garmin added March 2026. With Advanced ($388), competitive coverage
-(33-34/45). Adds B12, Folate, ESR that Function lacks. Quest + Labcorp
-lab access.</p>
-<p><strong>Notable Weaknesses:</strong> Most misleading biomarker
-marketing. Aggressive supplement upselling. Baseline alone insufficient
-(17/45). Misleading "24/7 clinical team." Doctored Reddit ad.
-Cancellation difficulties. Older thyroid methodology at baseline.</p>
-<hr />
-<h4 id="s3a-3-hundred-health-199year--hundredcom">S3a-3. Hundred Health
+<h4 id="s3a-2-hundred-health-199year--hundredcom">S3a-2. Hundred Health
 ($199/year) | <a href="https://hundred.com">hundred.com</a></h4>
 <blockquote>
 <p><strong>Note:</strong> When Hundred Health cut its price to $199/yr,
@@ -1581,6 +1452,137 @@ dropped 45-panel slots are Free T3, serum Uric Acid, Lp(a), LDL-P/NMR,
 IGF-1, Cortisol, Prolactin, Homocysteine; none of the 16 prior-missing
 markers were added.</p>
 <hr />
+<h4 id="s3a-3-superpower-199-388year--superpowercom">S3a-3. Superpower
+($199-$388/year) | <a
+href="https://superpower.com">superpower.com</a></h4>
+<p><strong>Pricing</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Price/year</strong></td>
+<td>$199 (Baseline); $388 (Baseline + Advanced Panel)</td>
+</tr>
+<tr>
+<td><strong>Draws/year</strong></td>
+<td>1 included</td>
+</tr>
+<tr>
+<td><strong>Cost per draw</strong></td>
+<td>$199 (Baseline) or $388 (with Advanced)</td>
+</tr>
+<tr>
+<td><strong>Tiers</strong></td>
+<td>Single membership + add-on panels (Advanced $189, Cardiovascular
+$159, Metabolic $129, Autoimmunity $139, Heavy Metals $129, and
+more)</td>
+</tr>
+<tr>
+<td><strong>At-home draw</strong></td>
+<td>+$99-119 per draw</td>
+</tr>
+<tr>
+<td><strong>HSA/FSA</strong></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Cancellation</strong></td>
+<td>No refunds; no cancel button in dashboard; FTC Click-to-Cancel
+concerns</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Biomarker Count:</strong> ~55 directly measured (Baseline) |
+~87 with Advanced | ~40 calculated ratios inflate "100+" claim</p>
+<p><strong>Critical inflation note:</strong> Superpower's "100+"
+marketing is the most aggressively inflated. ~40 calculated ratios
+counted as separate biomarkers. Function Health filed a federal lawsuit
+(Jan 2026, Case 2:26-cv-00810) alleging false advertising.</p>
+<p><strong>45-Panel Coverage: 17/45 Baseline (38%) | 33-34/45 with
+Advanced (73-76%)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Count</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Directly measured (Baseline $199)</td>
+<td>17</td>
+<td>CBC, CMP, Lipid, HbA1c, GGT, Uric Acid, TSH (old methodology), Total
+T, Estradiol, SHBG, DHEA-S, Vit D, Ferritin, Iron Panel, hs-CRP, ApoB,
+Cortisol. Count corrected from 20: TSH uses old methodology (not Free
+T3/T4), Free T calculated not measured, and Fasting Insulin not in
+baseline.</td>
+</tr>
+<tr>
+<td>Added with Advanced ($388)</td>
+<td>+13</td>
+<td>Fasting Insulin, Free T3, TPO Ab, TgAb, LH, FSH, Prolactin, B12,
+Folate, Homocysteine, ESR, Lp(a), IGF-1, PSA, LDL-P</td>
+</tr>
+<tr>
+<td>Missing from ALL panels</td>
+<td>11</td>
+<td>C-Peptide, RBC Mg, Zinc, Selenium, Copper, Ceruloplasmin,
+Fibrinogen, LP-PLA2, Oxidized LDL, Omega-3, Cystatin C</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Features</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dashboard/App</td>
+<td>iOS 4.9/5 (173 ratings), Web</td>
+<td>"Most beautiful health platform" but "very light" analysis</td>
+</tr>
+<tr>
+<td>Garmin integration</td>
+<td><strong>Yes (v1.0.6, March 2026)</strong></td>
+<td>Quality/depth unverified post-update</td>
+</tr>
+<tr>
+<td>Data export</td>
+<td>"Download or delete your data"</td>
+<td>Format unspecified</td>
+</tr>
+<tr>
+<td>Physician access</td>
+<td>SMS concierge only</td>
+<td>Health coaches, NOT physicians</td>
+</tr>
+<tr>
+<td>Supplement marketplace</td>
+<td>Aggressive upsell</td>
+<td>AI recommends $400+/month from own marketplace</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notable Strengths:</strong> Lowest entry price ($199/yr).
+Garmin added March 2026. With Advanced ($388), competitive coverage
+(33-34/45). Adds B12, Folate, ESR that Function lacks. Quest + Labcorp
+lab access.</p>
+<p><strong>Notable Weaknesses:</strong> Most misleading biomarker
+marketing. Aggressive supplement upselling. Baseline alone insufficient
+(17/45). Misleading "24/7 clinical team." Doctored Reddit ad.
+Cancellation difficulties. Older thyroid methodology at baseline.</p>
+<hr />
 <h4 id="s3a-4-mito-health-349-549year--mitohealthcom">S3a-4. Mito Health
 ($349-$549/year) | <a
 href="https://mitohealth.com">mitohealth.com</a></h4>
@@ -1745,12 +1747,12 @@ also have limited US review volume.</p>
 <td>32/45 (71%)</td>
 </tr>
 <tr>
-<td><strong>Superpower (Baseline)</strong></td>
+<td><strong>Hundred Health</strong></td>
 <td>$199</td>
-<td>1</td>
-<td>$199</td>
-<td>~55</td>
-<td>17/45 (38%)</td>
+<td>2</td>
+<td>~$99.50</td>
+<td>~53-79</td>
+<td>21/45 (47%)</td>
 </tr>
 <tr>
 <td><strong>Superpower (Base+Adv)</strong></td>
@@ -1761,20 +1763,12 @@ also have limited US review volume.</p>
 <td>33-34/45 (73-76%)</td>
 </tr>
 <tr>
-<td><strong>Hundred Health</strong></td>
+<td><strong>Superpower (Baseline)</strong></td>
 <td>$199</td>
-<td>2</td>
-<td>~$99.50</td>
-<td>~53-79</td>
-<td>21/45 (47%)</td>
-</tr>
-<tr>
-<td><strong>Mito Health Core</strong></td>
-<td>$349</td>
 <td>1</td>
-<td>$349</td>
-<td>~67-72</td>
-<td>30/45 (67%)</td>
+<td>$199</td>
+<td>~55</td>
+<td>17/45 (38%)</td>
 </tr>
 <tr>
 <td><strong>Mito Health Pro</strong></td>
@@ -1783,6 +1777,14 @@ also have limited US review volume.</p>
 <td>$549</td>
 <td>~79-87</td>
 <td>36/45 (80-82%)</td>
+</tr>
+<tr>
+<td><strong>Mito Health Core</strong></td>
+<td>$349</td>
+<td>1</td>
+<td>$349</td>
+<td>~67-72</td>
+<td>30/45 (67%)</td>
 </tr>
 </tbody>
 </table>
@@ -1944,11 +1946,239 @@ available as FH add-on</td>
 <hr />
 <h3 id="s3b-discovered-service-profiles">S3b. Discovered Service
 Profiles</h3>
-<h4 id="1-lifeforce-599-1838year--mylifeforcecom">1. Lifeforce
+<h4 id="1-siphox-health-450year--siphoxhealthcom">1. SiPhox Health
+($450/year) | <a
+href="https://siphoxhealth.com">siphoxhealth.com</a></h4>
+<p><strong>Category:</strong> At-home capillary blood testing
+(needle-free) | <strong>SCORED WITH FLAG (borderline DQ-2)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $450/yr U360 biannual (2 draws)</td>
+<td>Longevity Essentials: $250/yr</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~45 directly measured
+(U360)</td>
+<td>~10-12 calculated ratios inflate "60" claim</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> 24/45 (53%)</td>
+<td>NO CBC possible (capillary limitation)</td>
+</tr>
+<tr>
+<td><strong>Garmin:</strong> Uncertain (claims 300+ devices but official
+list omits Garmin)</td>
+<td><strong>Data export:</strong> PDF yes; CSV unclear</td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> Founded 2020 (YC S20), Trustpilot 4.5/5 (568
+reviews), $27M Series A</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key strength:</strong> Maximum convenience (fully at-home,
+no needles); unique markers (C-Peptide, Cystatin C)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> Documented accuracy problems: 300%+
+testosterone discrepancy, 600%+ vitamin D variance vs venous;
+<strong>SiPhox's own disclaimer: "SiPhox testing is not a substitute for
+your annual bloodwork"</strong> (<a
+href="https://siphoxhealth.com/hub/guides/what-we-dont-measure">siphoxhealth.com/hub/guides/what-we-dont-measure</a>);
+5-15% sample failure rate; no named CMO</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-whoop-advanced-labs-588year--whoopcom">2. WHOOP Advanced Labs
+($588/year) | <a href="https://whoop.com">whoop.com</a></h4>
+<p><strong>Category:</strong> Wearable-integrated blood testing
+(requires WHOOP)</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $588/yr (WHOOP $239 + 2 labs $349)</td>
+<td>4 tests: $838/yr</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~50-55 directly measured</td>
+<td>Claims 65</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> ~24-25/45 estimated</td>
+<td>No Free T3/T4, no GGT, no Cystatin C, no PSA</td>
+</tr>
+<tr>
+<td><strong>Garmin:</strong> <strong>No (WHOOP only)</strong></td>
+<td><strong>Data export:</strong> Yes (PDF; WHOOP data exportable)</td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> WHOOP founded 2012; Labs launched Sept
+2025</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key strength:</strong> Deep wearable-biomarker correlation
+(HRV/sleep/strain); Omega-3 Index included (rare); Lp(a) + Homocysteine
++ ApoB all in base</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> Requires WHOOP ecosystem; no Garmin;
+limited thyroid (TSH only)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-empirical-health-190-399year----borderline">3. Empirical
+Health ($190-$399/year) -- Borderline</h4>
+<p><strong>Category:</strong> Heart-health-focused blood testing |
+<strong>SCORED WITH FLAG (borderline DQ-2, no hormones)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $190 one-time (1 draw) or $399/yr Advanced
+(3 draws + MD review)</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~45-50 directly measured</td>
+<td>"100+" is inflated</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> ~25-30/45 estimated</td>
+<td><strong>No hormones at all</strong> (no testosterone, estradiol,
+cortisol, DHEA-S, SHBG)</td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> Founded 2023 (YC S23), 3 Trustpilot
+reviews</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> Complete absence of hormone panel
+makes it inadequate as a comprehensive longevity panel; heart-health
+only</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-insidetracker-829year--insidetrackercom">4. InsideTracker
+($829/year) | <a
+href="https://insidetracker.com">insidetracker.com</a></h4>
+<p><strong>Category:</strong> Data-driven biomarker analytics
+platform</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $829/yr (membership $149 + 2 Ultimate tests
+$680)</td>
+<td>4 tests: $1,509/yr</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~43-48 directly measured</td>
+<td>Claims "up to 48 directly analyzed"</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> ~22/45 (49%) per S5 coverage
+matrix</td>
+<td>No Lp(a), Homocysteine, Free T3/T4, DHEA-S (male), PSA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note on coverage discrepancy:</strong> Research file
+11-additional-services.md estimates ~28-32/45 for InsideTracker, while
+the S5 coverage matrix yields ~22/45 at the target-test level. The
+difference arises because the research estimate likely used a less
+strict counting methodology. The S5 matrix figure (~22/45) is adopted as
+authoritative since it applies the standardized per-marker YES/NO
+methodology used for all services. Priority Coverage Score 4 (22-24/45
+range) is assigned accordingly. | <strong>Garmin:</strong> <strong>YES
+(native, confirmed)</strong> | <strong>Data export:</strong> <strong>YES
+(CSV + PDF)</strong> | | <strong>Trust:</strong> Founded 2009
+(MIT/Harvard/Tufts scientists), 100K+ customers, Trustpilot 4.1/5 (617
+reviews) | | <strong>Key strength:</strong> Only service with confirmed
+native Garmin sync + CSV export + 30 past result uploads/yr | |
+<strong>Key weakness:</strong> Expensive for biomarker count
+($17.27/marker); no Lp(a), Homocysteine, Estradiol, or DHEA-S for males;
+no clinician consultation |</p>
+<h4 id="5-ultrahuman-blood-vision-499year">5. Ultrahuman Blood Vision
+($499/year)</h4>
+<p><strong>Category:</strong> Wearable-integrated blood testing |
+<strong>SCORED WITH FLAG (LOW confidence)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $499/yr (2 draws)</td>
+<td>Single Essentials: $99</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~80-100+ estimated</td>
+<td>Individual biomarker names NOT published</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> UNKNOWN (unverifiable)</td>
+<td>16 panel categories</td>
+</tr>
+<tr>
+<td><strong>Garmin:</strong> Indirect (via Terra API)</td>
+<td><strong>Data export:</strong> <strong>YES (CSV/XML
+confirmed)</strong></td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> Ultrahuman founded 2019 (Bangalore); Blood
+Vision US launch July 2025, 530 Trustpilot reviews</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key strength:</strong> Broadest category coverage (16 panels
+incl. autoimmune, heavy metals, urinalysis); CSV/XML export; Vision
+Cloud for uploading external results</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> Individual biomarker names not
+published -- verification impossible; Garmin only indirect</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="6-lifeforce-599-1838year--mylifeforcecom">6. Lifeforce
 ($599-$1,838/year) | <a
 href="https://mylifeforce.com">mylifeforce.com</a></h4>
-<p><strong>Category:</strong> Telehealth + testing + pharmacy hybrid |
-<strong>Source:</strong> 05-lifeforce-profile.md</p>
+<p><strong>Category:</strong> Telehealth + testing + pharmacy hybrid</p>
 <table>
 <thead>
 <tr>
@@ -1997,11 +2227,103 @@ Robbins and Peter Diamandis also co-founded Fountain Life (disqualified,
 DQ-6). This shared leadership means these are not independent companies
 -- recommendations involving either service should account for this
 relationship.</p>
-<h4 id="2-wild-health-4345year--wildhealthcom">2. Wild Health
+<h4 id="7-parsley-health-longevity-labs-350year--parsleyhealthcom">7.
+Parsley Health Longevity Labs ($350/year) | <a
+href="https://parsleyhealth.com">parsleyhealth.com</a></h4>
+<p><strong>Category:</strong> Functional medicine practice with
+standalone lab product | <strong>SCORED WITH FLAG (LOW
+confidence)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $350/yr (1 draw)</td>
+<td>Clinical Review: $550/yr (+ 30-min visit)</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~72-76 inferred (LOW
+confidence)</td>
+<td>Biomarker list NOT published</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> ~20-24/45 estimated (LOW
+confidence)</td>
+<td>Male panel uncertain -- originally female-focused</td>
+</tr>
+<tr>
+<td><strong>Garmin:</strong> No</td>
+<td><strong>Data export:</strong> Not documented</td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> Founded 2016, Trustpilot 4.0/5 (26 reviews),
+<strong>BBB D-</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> No published biomarker list (major
+transparency gap); male panel uncertain; BBB D-; 20-day support
+response; supplement upselling</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Additional product:</strong> BYO Labs Review ($250 one-time)
+-- bring your own lab results for a clinician consultation with 14-day
+messaging. Not a testing product but may be useful for interpreting
+results from other services.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="8-geviti-1529year">8. Geviti ($1,529/year)</h4>
+<p><strong>Category:</strong> Longevity + prescribing platform |
+<strong>SCORED WITH FLAG (LOW confidence)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annual:</strong> $1,529/yr Plus (2 draws)</td>
+<td>Free tier: $0 (no draws)</td>
+</tr>
+<tr>
+<td><strong>Standardized count:</strong> ~70-80 directly measured
+estimated</td>
+<td>Claims 100-115+ (ratio inflation)</td>
+</tr>
+<tr>
+<td><strong>45-panel coverage:</strong> UNKNOWN (individual list not
+fully published)</td>
+<td>Confirmed: Lp(a), Homocysteine, IGF-1, Free T3/T4, TPO Ab</td>
+</tr>
+<tr>
+<td><strong>Garmin:</strong> Not confirmed</td>
+<td><strong>Data export:</strong> Not confirmed</td>
+</tr>
+<tr>
+<td><strong>Trust:</strong> Founded ~2023, no Trustpilot page</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Key weakness:</strong> $21.84/biomarker; Rx upsell pressure;
+unpublished biomarker list; very new</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="9-wild-health-4345year--wildhealthcom">9. Wild Health
 (~$4,345/year) | <a
 href="https://wildhealth.com">wildhealth.com</a></h4>
-<p><strong>Category:</strong> Physician-led concierge precision medicine
-| <strong>Source:</strong> 06-wild-health-profile.md</p>
+<p><strong>Category:</strong> Physician-led concierge precision
+medicine</p>
 <table>
 <thead>
 <tr>
@@ -2050,12 +2372,11 @@ delays; no published biomarker list</td>
 </tr>
 </tbody>
 </table>
-<h4 id="3-fountain-life-10500year--fountainlifecom">3. Fountain Life
+<h4 id="10-fountain-life-10500year--fountainlifecom">10. Fountain Life
 ($10,500+/year) | <a
 href="https://fountainlife.com">fountainlife.com</a></h4>
 <p><strong>Category:</strong> Premium center-based longevity diagnostics
-| <strong>Source:</strong> 07-fountain-life-profile.md |
-<strong>DISQUALIFIED (DQ-6: no standalone blood option)</strong></p>
+| <strong>DISQUALIFIED (DQ-6: no standalone blood option)</strong></p>
 <table>
 <thead>
 <tr>
@@ -2084,334 +2405,8 @@ no standalone purchase</td>
 </tr>
 <tr>
 <td><strong>Co-founder overlap:</strong> Co-founders Tony Robbins and
-Peter Diamandis also co-founded Lifeforce (see S3b-1)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="4-siphox-health-450year--siphoxhealthcom">4. SiPhox Health
-($450/year) | <a
-href="https://siphoxhealth.com">siphoxhealth.com</a></h4>
-<p><strong>Category:</strong> At-home capillary blood testing
-(needle-free) | <strong>Source:</strong> 09-siphox-health-profile.md |
-<strong>SCORED WITH FLAG (borderline DQ-2)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $450/yr U360 biannual (2 draws)</td>
-<td>Longevity Essentials: $250/yr</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~45 directly measured
-(U360)</td>
-<td>~10-12 calculated ratios inflate "60" claim</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> 24/45 (53%)</td>
-<td>NO CBC possible (capillary limitation)</td>
-</tr>
-<tr>
-<td><strong>Garmin:</strong> Uncertain (claims 300+ devices but official
-list omits Garmin)</td>
-<td><strong>Data export:</strong> PDF yes; CSV unclear</td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> Founded 2020 (YC S20), Trustpilot 4.5/5 (568
-reviews), $27M Series A</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key strength:</strong> Maximum convenience (fully at-home,
-no needles); unique markers (C-Peptide, Cystatin C)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> Documented accuracy problems: 300%+
-testosterone discrepancy, 600%+ vitamin D variance vs venous;
-<strong>SiPhox's own disclaimer: "SiPhox testing is not a substitute for
-your annual bloodwork"</strong> (<a
-href="https://siphoxhealth.com/hub/guides/what-we-dont-measure">siphoxhealth.com/hub/guides/what-we-dont-measure</a>);
-5-15% sample failure rate; no named CMO</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="5-parsley-health-longevity-labs-350year--parsleyhealthcom">5.
-Parsley Health Longevity Labs ($350/year) | <a
-href="https://parsleyhealth.com">parsleyhealth.com</a></h4>
-<p><strong>Category:</strong> Functional medicine practice with
-standalone lab product | <strong>Source:</strong>
-10-parsley-health-profile.md | <strong>SCORED WITH FLAG (LOW
-confidence)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $350/yr (1 draw)</td>
-<td>Clinical Review: $550/yr (+ 30-min visit)</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~72-76 inferred (LOW
-confidence)</td>
-<td>Biomarker list NOT published</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> ~20-24/45 estimated (LOW
-confidence)</td>
-<td>Male panel uncertain -- originally female-focused</td>
-</tr>
-<tr>
-<td><strong>Garmin:</strong> No</td>
-<td><strong>Data export:</strong> Not documented</td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> Founded 2016, Trustpilot 4.0/5 (26 reviews),
-<strong>BBB D-</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> No published biomarker list (major
-transparency gap); male panel uncertain; BBB D-; 20-day support
-response; supplement upselling</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Additional product:</strong> BYO Labs Review ($250 one-time)
--- bring your own lab results for a clinician consultation with 14-day
-messaging. Not a testing product but may be useful for interpreting
-results from other services.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="6-insidetracker-829year--insidetrackercom">6. InsideTracker
-($829/year) | <a
-href="https://insidetracker.com">insidetracker.com</a></h4>
-<p><strong>Category:</strong> Data-driven biomarker analytics platform |
-<strong>Source:</strong> 11-additional-services.md</p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $829/yr (membership $149 + 2 Ultimate tests
-$680)</td>
-<td>4 tests: $1,509/yr</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~43-48 directly measured</td>
-<td>Claims "up to 48 directly analyzed"</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> ~22/45 (49%) per S5 coverage
-matrix</td>
-<td>No Lp(a), Homocysteine, Free T3/T4, DHEA-S (male), PSA</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Note on coverage discrepancy:</strong> Research file
-11-additional-services.md estimates ~28-32/45 for InsideTracker, while
-the S5 coverage matrix yields ~22/45 at the target-test level. The
-difference arises because the research estimate likely used a less
-strict counting methodology. The S5 matrix figure (~22/45) is adopted as
-authoritative since it applies the standardized per-marker YES/NO
-methodology used for all services. Priority Coverage Score 4 (22-24/45
-range) is assigned accordingly. | <strong>Garmin:</strong> <strong>YES
-(native, confirmed)</strong> | <strong>Data export:</strong> <strong>YES
-(CSV + PDF)</strong> | | <strong>Trust:</strong> Founded 2009
-(MIT/Harvard/Tufts scientists), 100K+ customers, Trustpilot 4.1/5 (617
-reviews) | | <strong>Key strength:</strong> Only service with confirmed
-native Garmin sync + CSV export + 30 past result uploads/yr | |
-<strong>Key weakness:</strong> Expensive for biomarker count
-($17.27/marker); no Lp(a), Homocysteine, Estradiol, or DHEA-S for males;
-no clinician consultation |</p>
-<h4 id="7-whoop-advanced-labs-588year--whoopcom">7. WHOOP Advanced Labs
-($588/year) | <a href="https://whoop.com">whoop.com</a></h4>
-<p><strong>Category:</strong> Wearable-integrated blood testing
-(requires WHOOP) | <strong>Source:</strong>
-11-additional-services.md</p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $588/yr (WHOOP $239 + 2 labs $349)</td>
-<td>4 tests: $838/yr</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~50-55 directly measured</td>
-<td>Claims 65</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> ~24-25/45 estimated</td>
-<td>No Free T3/T4, no GGT, no Cystatin C, no PSA</td>
-</tr>
-<tr>
-<td><strong>Garmin:</strong> <strong>No (WHOOP only)</strong></td>
-<td><strong>Data export:</strong> Yes (PDF; WHOOP data exportable)</td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> WHOOP founded 2012; Labs launched Sept
-2025</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key strength:</strong> Deep wearable-biomarker correlation
-(HRV/sleep/strain); Omega-3 Index included (rare); Lp(a) + Homocysteine
-+ ApoB all in base</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> Requires WHOOP ecosystem; no Garmin;
-limited thyroid (TSH only)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="8-ultrahuman-blood-vision-499year">8. Ultrahuman Blood Vision
-($499/year)</h4>
-<p><strong>Category:</strong> Wearable-integrated blood testing |
-<strong>Source:</strong> 11-additional-services.md | <strong>SCORED WITH
-FLAG (LOW confidence)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $499/yr (2 draws)</td>
-<td>Single Essentials: $99</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~80-100+ estimated</td>
-<td>Individual biomarker names NOT published</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> UNKNOWN (unverifiable)</td>
-<td>16 panel categories</td>
-</tr>
-<tr>
-<td><strong>Garmin:</strong> Indirect (via Terra API)</td>
-<td><strong>Data export:</strong> <strong>YES (CSV/XML
-confirmed)</strong></td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> Ultrahuman founded 2019 (Bangalore); Blood
-Vision US launch July 2025, 530 Trustpilot reviews</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key strength:</strong> Broadest category coverage (16 panels
-incl. autoimmune, heavy metals, urinalysis); CSV/XML export; Vision
-Cloud for uploading external results</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> Individual biomarker names not
-published -- verification impossible; Garmin only indirect</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="9-geviti-1529year">9. Geviti ($1,529/year)</h4>
-<p><strong>Category:</strong> Longevity + prescribing platform |
-<strong>Source:</strong> 11-additional-services.md | <strong>SCORED WITH
-FLAG (LOW confidence)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $1,529/yr Plus (2 draws)</td>
-<td>Free tier: $0 (no draws)</td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~70-80 directly measured
-estimated</td>
-<td>Claims 100-115+ (ratio inflation)</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> UNKNOWN (individual list not
-fully published)</td>
-<td>Confirmed: Lp(a), Homocysteine, IGF-1, Free T3/T4, TPO Ab</td>
-</tr>
-<tr>
-<td><strong>Garmin:</strong> Not confirmed</td>
-<td><strong>Data export:</strong> Not confirmed</td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> Founded ~2023, no Trustpilot page</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> $21.84/biomarker; Rx upsell pressure;
-unpublished biomarker list; very new</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h4 id="10-empirical-health-190-399year----borderline">10. Empirical
-Health ($190-$399/year) -- Borderline</h4>
-<p><strong>Category:</strong> Heart-health-focused blood testing |
-<strong>Source:</strong> 11-additional-services.md | <strong>SCORED WITH
-FLAG (borderline DQ-2, no hormones)</strong></p>
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>Detail</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Annual:</strong> $190 one-time (1 draw) or $399/yr Advanced
-(3 draws + MD review)</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Standardized count:</strong> ~45-50 directly measured</td>
-<td>"100+" is inflated</td>
-</tr>
-<tr>
-<td><strong>45-panel coverage:</strong> ~25-30/45 estimated</td>
-<td><strong>No hormones at all</strong> (no testosterone, estradiol,
-cortisol, DHEA-S, SHBG)</td>
-</tr>
-<tr>
-<td><strong>Trust:</strong> Founded 2023 (YC S23), 3 Trustpilot
-reviews</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Key weakness:</strong> Complete absence of hormone panel
-makes it inadequate as a comprehensive longevity panel; heart-health
-only</td>
+Peter Diamandis also co-founded Lifeforce (see the Lifeforce profile in
+S3b)</td>
 <td></td>
 </tr>
 </tbody>
@@ -5533,8 +5528,7 @@ C-Peptide.</li>
 ($365, 32/45 = $11/test) and Mito Core ($349, 30/45 = $12/test).</li>
 <li><strong>WHOOP Advanced Labs is the only service offering Omega-3
 Index</strong> in the standard panel. (Whether this is a true RBC
-membrane assay or serum-based is unverified -- research file 11 does not
-specify methodology.)</li>
+membrane assay or serum-based is unverified.)</li>
 </ol>
 <hr />
 <h2 id="s6-feature-comparison-matrix-output-4">S6. Feature Comparison
@@ -6299,11 +6293,11 @@ across.</li>
 <h2 id="s7-scored-rankings">S7. Scored Rankings</h2>
 <h3 id="71-service-by-service-scoring">7.1 Service-by-Service
 Scoring</h3>
-<p>All scores justified with specific data from research files.
-Standardized counting: "Directly measured unique analytes, base tier,
-single draw." All $/biomarker figures use the canonical methodology
-defined in S6.1 footnote ^1 (annual price / directly measured unique
-analytes, base tier, single draw).</p>
+<p>All scores are justified with specific data from the service profiles
+in S3. Standardized counting: "Directly measured unique analytes, base
+tier, single draw." All $/biomarker figures use the canonical
+methodology defined in S6.1 footnote ^1 (annual price / directly
+measured unique analytes, base tier, single draw).</p>
 <h4 id="function-health-365yr----weighted-total-745">Function Health
 ($365/yr) -- Weighted Total: <strong>7.45</strong></h4>
 <table>
@@ -6374,142 +6368,6 @@ NO Garmin, NO clinician 1:1, NO Cystatin C</td>
 <td>Quest 2K+ locations; 48 states; iOS 4.9/5; but full results take 3-4
 weeks — band 5 (slow turnaround), below the sub-2-week services; the
 excellent app keeps it from dropping to 4</td>
-</tr>
-</tbody>
-</table>
-<h4 id="mito-health-pro-549yr----weighted-total-630">Mito Health Pro
-($549/yr) -- Weighted Total: <strong>6.30</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Score</th>
-<th>Weight</th>
-<th>Weighted</th>
-<th>Justification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Priority Coverage</td>
-<td>8</td>
-<td>5%</td>
-<td>0.40</td>
-<td>36/45 (80%); highest of any service; Cystatin C + IGF-1 unique</td>
-</tr>
-<tr>
-<td>Total Coverage</td>
-<td>7</td>
-<td>30%</td>
-<td>2.10</td>
-<td>~79-87 measured (midpoint ~83 falls in the 70-84 band → 7; does not
-clear 85 for band 8); 9+ categories; NMR in Pro; no autoimmune in
-base</td>
-</tr>
-<tr>
-<td>Value</td>
-<td>6</td>
-<td>30%</td>
-<td>1.80</td>
-<td>Cost-efficiency 6 ($6.86/biomarker) blended 50/50 with affordability
-6 ($549/yr): (6+6)/2 = 6</td>
-</tr>
-<tr>
-<td>Frequency</td>
-<td>4</td>
-<td>10%</td>
-<td>0.40</td>
-<td>1 draw/yr; additional pricing not published</td>
-</tr>
-<tr>
-<td>Unique Features</td>
-<td>8</td>
-<td>10%</td>
-<td>0.80</td>
-<td>Cystatin C (rare), RBC Mg, B12+Folate in Core, 1:1 clinician, MitoMD
-AI, DEXA $59</td>
-</tr>
-<tr>
-<td>Data Access</td>
-<td>5</td>
-<td>10%</td>
-<td>0.50</td>
-<td>Lab reports accessible; no confirmed CSV; no wearable</td>
-</tr>
-<tr>
-<td>Convenience</td>
-<td>6</td>
-<td>5%</td>
-<td>0.30</td>
-<td>LabCorp/Quest; all 50 states; web-only; ~1 week results</td>
-</tr>
-</tbody>
-</table>
-<h4 id="superpower-baseadvanced-388yr----weighted-total-695">Superpower
-Base+Advanced ($388/yr) -- Weighted Total: <strong>6.95</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Score</th>
-<th>Weight</th>
-<th>Weighted</th>
-<th>Justification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Priority Coverage</td>
-<td>7</td>
-<td>5%</td>
-<td>0.35</td>
-<td>33-34/45 (73-76%); Advanced adds key markers</td>
-</tr>
-<tr>
-<td>Total Coverage</td>
-<td>7</td>
-<td>30%</td>
-<td>2.10</td>
-<td>~87 measured; 8+ categories; NMR-like fractionation; no
-autoimmune/heavy metals in base</td>
-</tr>
-<tr>
-<td>Value</td>
-<td>7.5</td>
-<td>30%</td>
-<td>2.25</td>
-<td>Cost-efficiency 7 ($4.46/biomarker, 1 draw caps the tier at 7)
-blended 50/50 with affordability 8 ($388/yr): (7+8)/2 = 7.5</td>
-</tr>
-<tr>
-<td>Frequency</td>
-<td>6</td>
-<td>10%</td>
-<td>0.60</td>
-<td>1 draw/yr with affordable retesting — additional draw $169-179
-(under $200) = band 6</td>
-</tr>
-<tr>
-<td>Unique Features</td>
-<td>6</td>
-<td>10%</td>
-<td>0.60</td>
-<td>Garmin (Mar 2026), ADMA/SDMA, ESR, BioAge; but AI-only
-interpretation, supplement upselling</td>
-</tr>
-<tr>
-<td>Data Access</td>
-<td>7</td>
-<td>10%</td>
-<td>0.70</td>
-<td>Data download/delete; Garmin + Oura + WHOOP sync</td>
-</tr>
-<tr>
-<td>Convenience</td>
-<td>7</td>
-<td>5%</td>
-<td>0.35</td>
-<td>Quest/Labcorp; at-home +$99-119; iOS 4.9/5</td>
 </tr>
 </tbody>
 </table>
@@ -6597,6 +6455,142 @@ because there is no raw CSV/API export</td>
 <td>Quest + BioReference + LabCorp 5,000+ locations nationwide; at-home
 available; iOS 4.9/5; turnaround days to 1-2 weeks — field-best
 logistics profile = band 8</td>
+</tr>
+</tbody>
+</table>
+<h4 id="superpower-baseadvanced-388yr----weighted-total-695">Superpower
+Base+Advanced ($388/yr) -- Weighted Total: <strong>6.95</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Score</th>
+<th>Weight</th>
+<th>Weighted</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Priority Coverage</td>
+<td>7</td>
+<td>5%</td>
+<td>0.35</td>
+<td>33-34/45 (73-76%); Advanced adds key markers</td>
+</tr>
+<tr>
+<td>Total Coverage</td>
+<td>7</td>
+<td>30%</td>
+<td>2.10</td>
+<td>~87 measured; 8+ categories; NMR-like fractionation; no
+autoimmune/heavy metals in base</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>7.5</td>
+<td>30%</td>
+<td>2.25</td>
+<td>Cost-efficiency 7 ($4.46/biomarker, 1 draw caps the tier at 7)
+blended 50/50 with affordability 8 ($388/yr): (7+8)/2 = 7.5</td>
+</tr>
+<tr>
+<td>Frequency</td>
+<td>6</td>
+<td>10%</td>
+<td>0.60</td>
+<td>1 draw/yr with affordable retesting — additional draw $169-179
+(under $200) = band 6</td>
+</tr>
+<tr>
+<td>Unique Features</td>
+<td>6</td>
+<td>10%</td>
+<td>0.60</td>
+<td>Garmin (Mar 2026), ADMA/SDMA, ESR, BioAge; but AI-only
+interpretation, supplement upselling</td>
+</tr>
+<tr>
+<td>Data Access</td>
+<td>7</td>
+<td>10%</td>
+<td>0.70</td>
+<td>Data download/delete; Garmin + Oura + WHOOP sync</td>
+</tr>
+<tr>
+<td>Convenience</td>
+<td>7</td>
+<td>5%</td>
+<td>0.35</td>
+<td>Quest/Labcorp; at-home +$99-119; iOS 4.9/5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mito-health-pro-549yr----weighted-total-630">Mito Health Pro
+($549/yr) -- Weighted Total: <strong>6.30</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Score</th>
+<th>Weight</th>
+<th>Weighted</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Priority Coverage</td>
+<td>8</td>
+<td>5%</td>
+<td>0.40</td>
+<td>36/45 (80%); highest of any service; Cystatin C + IGF-1 unique</td>
+</tr>
+<tr>
+<td>Total Coverage</td>
+<td>7</td>
+<td>30%</td>
+<td>2.10</td>
+<td>~79-87 measured (midpoint ~83 falls in the 70-84 band → 7; does not
+clear 85 for band 8); 9+ categories; NMR in Pro; no autoimmune in
+base</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>6</td>
+<td>30%</td>
+<td>1.80</td>
+<td>Cost-efficiency 6 ($6.86/biomarker) blended 50/50 with affordability
+6 ($549/yr): (6+6)/2 = 6</td>
+</tr>
+<tr>
+<td>Frequency</td>
+<td>4</td>
+<td>10%</td>
+<td>0.40</td>
+<td>1 draw/yr; additional pricing not published</td>
+</tr>
+<tr>
+<td>Unique Features</td>
+<td>8</td>
+<td>10%</td>
+<td>0.80</td>
+<td>Cystatin C (rare), RBC Mg, B12+Folate in Core, 1:1 clinician, MitoMD
+AI, DEXA $59</td>
+</tr>
+<tr>
+<td>Data Access</td>
+<td>5</td>
+<td>10%</td>
+<td>0.50</td>
+<td>Lab reports accessible; no confirmed CSV; no wearable</td>
+</tr>
+<tr>
+<td>Convenience</td>
+<td>6</td>
+<td>5%</td>
+<td>0.30</td>
+<td>LabCorp/Quest; all 50 states; web-only; ~1 week results</td>
 </tr>
 </tbody>
 </table>
@@ -6959,24 +6953,25 @@ Weighted total shown is the confidence-adjusted score used for ranking
 <tbody>
 <tr>
 <td><strong>Tier 1 -- Recommended</strong></td>
-<td>Function Health</td>
-<td>7.45</td>
-<td>Best comprehensive biomarker-to-dollar ratio for longevity
-monitoring</td>
+<td>Function Health, Hundred Health</td>
+<td>7.10-7.45</td>
+<td>The two clear front-runners. Function Health leads on the field's
+best comprehensive biomarker-to-dollar ratio (broadest panel + 2
+draws/yr). Hundred Health is right behind at #2 (7.10) on the field's
+<strong>top Value</strong> (cost-efficiency 9 blended with affordability
+10) plus confirmed Garmin sync + 450+ EHR import; its one real
+limitation is the reduced $199 panel (Priority Coverage), which carries
+just 5% weight.</td>
 </tr>
 <tr>
 <td><strong>Tier 2 -- Strong Contenders</strong></td>
-<td>Hundred Health, Superpower B+A, Superpower Base, Mito Pro, Mito
-Core</td>
-<td>6.15-7.10</td>
-<td>Each excels in one dimension but has trade-offs. <em>(Hundred Health
-rises to #2 at 7.10 on the field's top Value — cost-efficiency 9 blended
-with affordability 10 — plus its confirmed Garmin + 450+ EHR import; its
-reduced $199 panel keeps Priority Coverage low but that carries only 5%
-weight. Superpower Base climbs to #4 once affordability is rewarded
-($199, Value 8.5). Mito Pro and Mito Core ease to the lower end after
-their Total Coverage scores were aligned to the rubric band their
-measured counts actually clear.)</em></td>
+<td>Superpower B+A, Superpower Base, Mito Pro, Mito Core</td>
+<td>6.15-6.95</td>
+<td>Each excels in one dimension but has trade-offs. Superpower Base
+climbs to #4 once affordability is rewarded ($199, Value 8.5). Mito Pro
+and Mito Core ease to the lower end after their Total Coverage scores
+were aligned to the rubric band their measured counts actually
+clear.</td>
 </tr>
 <tr>
 <td><strong>Tier 3 -- Niche / Supplementary</strong></td>
@@ -7003,7 +6998,79 @@ $4,345 price give it the field's worst Value.)</em></td>
 <p>† Priority Coverage, Total Coverage, and the Value cost-efficiency
 leg confidence-discounted ×0.5 per §4.6 (unpublished biomarker
 list).</p>
-<h3 id="74-key-scoring-observations">7.4 Key Scoring Observations</h3>
+<h3 id="74-scoring-methodology--key-observations">7.4 Scoring
+Methodology &amp; Key Observations</h3>
+<p>Each service is scored 1–10 in seven categories (full rubrics in S4);
+the weighted total drives the ranking. How each category is scored:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>What it measures</th>
+<th>What earns a high score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Priority Coverage</strong></td>
+<td>5%</td>
+<td>How many of the 45-test reference panel are directly measured in the
+base membership</td>
+<td>Directly measures most of the 45 target markers</td>
+</tr>
+<tr>
+<td><strong>Total Coverage</strong></td>
+<td>30%</td>
+<td>Total directly-measured analytes + category breadth</td>
+<td>~85+ markers across many categories (incl. NMR, autoimmune, heavy
+metals, omega)</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td>30%</td>
+<td>A 50/50 blend of <strong>cost-efficiency</strong>
+($/directly-measured biomarker + draws/yr) and
+<strong>affordability</strong> (absolute annual price)</td>
+<td>Low cost <em>per test</em> <strong>and</strong> a low total
+price</td>
+</tr>
+<tr>
+<td><strong>Frequency</strong></td>
+<td>10%</td>
+<td>Included draws/year + trend-tracking + retest economics</td>
+<td>2+ full draws/yr with affordable additional testing</td>
+</tr>
+<tr>
+<td><strong>Unique Features</strong></td>
+<td>10%</td>
+<td>Meaningful, verified differentiators</td>
+<td>Several real differentiators (Garmin, automated EHR import, 1:1
+clinician, NMR, Cystatin C, prescribing)</td>
+</tr>
+<tr>
+<td><strong>Data Access</strong></td>
+<td>10%</td>
+<td>Data out (PDF/CSV/API) + data in (automated EHR import) + wearable
+sync</td>
+<td>Raw CSV/API export, or PDF + confirmed wearable + automated record
+import</td>
+</tr>
+<tr>
+<td><strong>Convenience</strong></td>
+<td>5%</td>
+<td>Turnaround, at-home option, app quality, lab network, state
+coverage</td>
+<td>Fast turnaround, at-home option, strong app, large nationwide
+network</td>
+</tr>
+</tbody>
+</table>
+<p>For services that do not publish their biomarker list, Priority
+Coverage, Total Coverage, and the Value cost-efficiency leg are
+multiplied by ×0.5 (§4.6), so unverifiable claims can't outrank
+disclosed panels.</p>
+<p><strong>Key observations:</strong></p>
 <ol type="1">
 <li><strong>The ranking is driven primarily by Value and Total Coverage
 (30% each).</strong> Function Health keeps the lead on the strength of
@@ -7208,9 +7275,10 @@ for Best Overall. It launched Dec 2025 (now ~6 months old), and maturity
 risk persists.</p>
 <hr />
 <h3
-id="b-best-value-function-health-365yr-for-comprehensive-coverage-hundred-health-199yr-for-a-core-panel">(b)
-Best Value: <strong>Function Health ($365/yr) for comprehensive
-coverage; Hundred Health ($199/yr) for a core panel</strong></h3>
+id="b-best-value-hundred-health-199yr--function-health-365yr-is-the-best-value-where-comprehensive-breadth-is-the-goal">(b)
+Best Value: <strong>Hundred Health ($199/yr)</strong> — <em>Function
+Health ($365/yr) is the best value where comprehensive breadth is the
+goal</em></h3>
 <table>
 <thead>
 <tr>
@@ -7357,9 +7425,10 @@ InsideTracker ($829/yr) remains best if CSV export is also
 essential.</p>
 <hr />
 <h3
-id="d-best-for-ongoing-monitoring-function-health-365yr-or-empirical-health-399yr">(d)
-Best for Ongoing Monitoring: <strong>Function Health ($365/yr) or
-Empirical Health ($399/yr)</strong></h3>
+id="d-best-for-frequent-monitoring-empirical-health-399yr--function-health-365yr-for-the-deepest-snapshot-per-draw">(d)
+Best for Frequent Monitoring: <strong>Empirical Health
+($399/yr)</strong> — <em>Function Health ($365/yr) for the deepest
+snapshot per draw</em></h3>
 <table>
 <thead>
 <tr>
@@ -7775,8 +7844,8 @@ risk is mitigated by downloading PDFs/CSVs after each draw. However,
 users should be aware that the long-term business model of any
 subscription testing service depends on revenue streams beyond testing
 fees.</p>
-<h3 id="91-biomarker-verification-gaps-14-questions-2-resolved">9.1
-Biomarker Verification Gaps (14 questions, 2 resolved)</h3>
+<h3 id="91-biomarker-verification-gaps-12-questions">9.1 Biomarker
+Verification Gaps (12 questions)</h3>
 <table>
 <thead>
 <tr>
@@ -7851,14 +7920,6 @@ immunoassay? S5 shows YES (directly measured) but method unknown.</td>
 <td>Function Health</td>
 </tr>
 <tr>
-<td>10</td>
-<td><del>Is Function Health LDL-C directly measured or Friedewald
-calculated?</del> <strong>RESOLVED:</strong> S5 coverage matrix shows
-LDL-C as CALC for FH.</td>
-<td>--</td>
-<td>Function Health</td>
-</tr>
-<tr>
 <td>11</td>
 <td>Is Superpower's "lipoprotein fractionation" true NMR or ion
 mobility?</td>
@@ -7877,14 +7938,6 @@ mobility?</td>
 mobility)?</td>
 <td>Medium</td>
 <td>Mito Health</td>
-</tr>
-<tr>
-<td>14</td>
-<td><del>Is Superpower Free Testosterone calculated or directly
-measured?</del> <strong>RESOLVED:</strong> S5 coverage matrix shows SP-B
-Free T as CALC.</td>
-<td>--</td>
-<td>Superpower</td>
 </tr>
 </tbody>
 </table>
@@ -8021,16 +8074,6 @@ well? No post-update reviews found.</td>
 official list omits Garmin.</td>
 <td>Medium</td>
 <td>SiPhox</td>
-</tr>
-<tr>
-<td>30</td>
-<td>Can Hundred Health export raw results as CSV/PDF?
-<strong>RESOLVED:</strong> PDF YES (lab results view/share as PDF
-in-app; share records with doctors), but <strong>CSV NO and public API
-NO</strong>. The absence of raw export caps Data Access at 8 (it cannot
-reach 9–10).</td>
-<td><del>High</del> RESOLVED</td>
-<td>Hundred Health</td>
 </tr>
 <tr>
 <td>31</td>
@@ -8173,18 +8216,6 @@ cited but date unknown.</td>
 <td>Function Health</td>
 </tr>
 <tr>
-<td>46</td>
-<td>What is Hundred Health's "GHOAT" parent entity?
-<strong>RESOLVED:</strong> GHOAT = "<strong>Greatest Health Of All
-Time</strong>" (founder Tyler Smith's acronym); legal/operating entity
-is "<strong>GHOAT LLC</strong>" (App Store © 2025 GHOAT LLC) — NOT a
-separate parent holding company. CEO/founder Tyler Smith (ex-SkySlope);
-BellSant acquired (Matt Fellowes on advisory board); funding
-undisclosed.</td>
-<td><del>Low</del> RESOLVED</td>
-<td>Hundred Health</td>
-</tr>
-<tr>
 <td>47</td>
 <td>Who is SiPhox Health's Chief Medical Officer? No named CMO found in
 research.</td>
@@ -8252,34 +8283,6 @@ per-visit fees?</td>
 </tr>
 </tbody>
 </table>
-<h3 id="96a-resolved--hundred-health-panel-scope">9.6a Resolved —
-Hundred Health panel scope</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Question</th>
-<th>Impact</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>54</td>
-<td>Did Hundred Health cut its blood panel with the $199 repricing?
-<strong>RESOLVED:</strong> Yes — Hundred Health's reduced $199 panel is
-confirmed on <code>hundred.com/what-we-test</code>, which itemizes ~100
-markers with the prior specialty markers (Free T3, serum Uric Acid,
-Lp(a), LDL-P/NMR, IGF-1, Cortisol, Prolactin, Homocysteine, plus the ANA
-autoimmune panel and heavy-metals/Lead) no longer offered. This drives
-the 21/45 (47%) coverage that holds its Total Coverage down; with the
-blended Value (9.5) and the category weights, its overall score is 7.10
-/ rank #2.</td>
-<td><del>High</del> RESOLVED</td>
-<td>Hundred Health</td>
-</tr>
-</tbody>
-</table>
 <h3 id="summary-statistics">Summary Statistics</h3>
 <table>
 <thead>
@@ -8290,13 +8293,12 @@ blended Value (9.5) and the category weights, its overall score is 7.10
 </thead>
 <tbody>
 <tr>
-<td>Total open questions</td>
-<td>52 (was 53; HH #30 &amp; #46 RESOLVED, new HH #54 ADDED — net
-−1)</td>
+<td>Open questions (across all services)</td>
+<td>~50</td>
 </tr>
 <tr>
 <td>High impact</td>
-<td>11 (net 0: High loses resolved #30, gains new #54)</td>
+<td>9</td>
 </tr>
 <tr>
 <td>Medium impact</td>
@@ -8304,16 +8306,13 @@ blended Value (9.5) and the category weights, its overall score is 7.10
 </tr>
 <tr>
 <td>Low impact</td>
-<td>14 (was 15; HH #46 RESOLVED)</td>
+<td>14</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Services with most open questions:</strong> Wild Health (5),
-Hundred Health (5 still-open core: #18, #19, #27, #35, #51; #30 &amp;
-#46 resolved this cycle; new High-impact panel-scope #54 surfaced
-separately → 6 still-open total), Parsley (4), SiPhox (4), Function
-Health (4), Fountain Life (4), Superpower (4), Mito Health (3),
-Lifeforce (3).</p>
+<p><strong>Services with the most open questions:</strong> Hundred
+Health (5), Wild Health (5), Function Health (4), Superpower (4), SiPhox
+(4), Parsley (4), Fountain Life (4), Mito Health (3), Lifeforce (3).</p>
 <hr />
 <h2 id="s10-sources">S10. Sources</h2>
 <h3 id="101-service-websites">10.1 Service websites</h3>
@@ -8422,6 +8421,12 @@ models (Dec 2025).</li>
 EHR-import member reports).</li>
 </ul>
 <hr />
+<p><em>Last updated: 2026-06-09. Value is a 50/50 blend of
+cost-efficiency (price per directly-measured biomarker + draws/year) and
+absolute affordability (annual price), so a low total cost is rewarded
+alongside a low cost per test. All 1-10 category scores reflect a
+cross-provider consistency pass that aligns each service to its rubric
+band.</em></p>
 </main>
 <footer class="report-foot">
   <span>Membership Health Testing Services · Comprehensive Comparison · 2026</span>
@@ -8472,12 +8477,23 @@ EHR-import member reports).</li>
   var sb=firstTableAfter(document.getElementById('ranked-at-a-glance'));
   if(sb){
     sb.classList.add('scoreboard');
+    // profile headings carry a per-year price; map each service to its profile anchor
+    var profileHeads=qsa('main h3[id], main h4[id]').filter(function(h){return /\/year\)/.test(h.textContent);});
+    function findProfile(name){
+      var brand=name.replace(/[^A-Za-z ]/g,'').trim().split(/\s+/)[0].toLowerCase();
+      if(!brand) return null;
+      for(var k=0;k<profileHeads.length;k++){ if(profileHeads[k].textContent.toLowerCase().indexOf(brand)!==-1) return profileHeads[k]; }
+      return null;
+    }
     qsa('tbody tr',sb).forEach(function(tr){
       var td=qsa('td',tr); if(!td.length)return;
       var rank=parseInt((td[0].textContent||'').replace(/\D/g,''),10);
       var sc=td[td.length-1]; var score=parseFloat(sc.textContent);
       if(rank>=1&&rank<=3) tr.classList.add('medal','medal-'+rank);
       td[0].classList.add('rk');
+      // link service name to its profile section
+      var prof=findProfile(td[1].textContent);
+      if(prof){ td[1].innerHTML='<a class="svc-link" href="#'+prof.id+'">'+td[1].innerHTML.trim()+'</a>'; }
       if(!isNaN(score)){
         sc.classList.add('sc');
         var w=Math.max(4,Math.min(100,score*10));

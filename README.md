@@ -79,7 +79,7 @@ pandoc -f gfm-tex_math_dollars-tex_math_gfm --css build/report.css \
 | `report.md` | The full report in Markdown (renders on GitHub) |
 | `report.pdf` | Print/download version |
 | `score-membership-services.py` | The scoring engine — single source of truth for every number |
-| `research/` | Supporting web-research working notes (pricing, biomarkers, features) |
+| `research/` | Research backbone — per-service company profiles, the Hundred Health re-research, and community / third-party-comparison / biomarker-verification notes |
 | `build/` | Pandoc template, print stylesheet, and Lua filter used to generate the report |
 
 ## Notes & disclaimer
