@@ -9,3 +9,4 @@ synthesized findings live in the main report (`../report.md`). No personal data 
 - **`service-profiles/`** — per-service company research: pricing, biomarker inventory, features, trust signals (Function, Superpower, Mito, SiPhox, Lifeforce, Wild, Parsley, Fountain Life, and the InsideTracker/WHOOP/Ultrahuman/Geviti/Empirical group).
 - **`hundred-update/`** — the 2026 re-research of Hundred Health after its price-and-panel change (pricing, biomarkers, features/trust, gap-fill/panel-scope).
 - **`supporting/`** — community sentiment, third-party comparison reviews, and biomarker-verification notes.
+- **`biomarker-reference/`** — general clinical reference guides for the panel's markers (standard + longevity-optimized ranges; educational, not medical advice).
