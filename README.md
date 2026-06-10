@@ -82,6 +82,10 @@ pandoc -f gfm-tex_math_dollars-tex_math_gfm --css build/report.css \
 | `research/` | Research backbone — per-service company profiles, the Hundred Health re-research, and community / third-party-comparison / biomarker-verification notes |
 | `build/` | Pandoc template, print stylesheet, and Lua filter used to generate the report |
 
+## License
+
+Report content (report + research) is **CC BY 4.0**; the scoring engine and build tooling are **MIT**. See [LICENSE.md](LICENSE.md).
+
 ## Notes & disclaimer
 
 This is an independent comparison for informational purposes only; it is **not medical advice** and is **not affiliated with or sponsored by** any service listed. Pricing, panels, and features change frequently — verify current details with each provider before purchasing. Figures reflect public information as of mid-2026; see the report's *Open Questions* and *Sources* sections for confidence levels and citations.

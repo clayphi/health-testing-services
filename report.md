@@ -321,6 +321,8 @@ All biomarker counts use the canonical method: **"Directly measured unique analy
 
 **Notable Weaknesses:** **~6 months old as of 2026-06** (launched Dec 16, 2025) -- maturity risk. **Reduced panel:** homepage marketing dropped "160+" → "100+", and the itemized panel fell from ~104-117 → ~53-79 measured and 45-panel coverage from 29/45 → 21/45, with specialty markers (NMR, Lp(a), IGF-1, Cortisol, Prolactin, Free T3, ANA, Lead, Amylase/Lipase, Homocysteine, Zinc, serum Uric Acid, Free PSA, among others) dropped from the itemized panel. **No CSV export** (PDF-only). Critical nutrient gaps persist (no B12, Folate, RBC Mg, Selenium, Copper, Ceruloplasmin). No thyroid antibodies. No DHEA-S. No Cystatin C. Draw 2 is reduced scope (~55 markers).
 
+**Trust note:** Hundred Health is ~6 months old (launched Dec 2025), which is the main trust consideration. Counterpoint: founder/CEO Tyler Smith previously founded and bootstrapped SkySlope, the real-estate transaction platform acquired (majority stake) by Fidelity National Financial (NYSE: FNF) in 2017 at an $80M+ valuation, and is an early investor in Function Health and TruMe — an established execution track record for a first-year company. Hundred's launch was covered by Forbes (Dec 2025).
+
 **Note on biomarker count (count reconciliation):** The prior $499 panel scored HH at **29/45 (64%)** directly measured (~104-117 total). The current `hundred.com/what-we-test` page itemizes a reduced **~100+** panel: under the like-for-like collapsed framing this yields **21/45 (47%)** direct (~53-79 total measured). The 8 dropped 45-panel slots are Free T3, serum Uric Acid, Lp(a), LDL-P/NMR, IGF-1, Cortisol, Prolactin, Homocysteine; none of the 16 prior-missing markers were added.
 
 ---
@@ -811,7 +813,7 @@ Three services — Ultrahuman Blood Vision, Geviti Plus, and Parsley Longevity L
 
 ## S5. Coverage Matrix (Output 3)
 
-**Column Key:** FH = Function Health, SP-B = Superpower Baseline, SP-A = Superpower +Advanced, HH = Hundred Health, MC = Mito Core, MP = Mito Pro, LF = Lifeforce, IT = InsideTracker, WP = WHOOP, SiP = SiPhox, UH = Ultrahuman, GV = Geviti
+**Column Key (ranked order):** FH = Function Health, HH = Hundred Health, SP-A = Superpower +Advanced, SP-B = Superpower Baseline, MP = Mito Pro, MC = Mito Core, SiP = SiPhox, WP = WHOOP, IT = InsideTracker, UH = Ultrahuman, LF = Lifeforce, GV = Geviti
 
 **Cell Legend:** YES = directly measured in base | NO = not offered | CALC = calculated/derived | ADD = add-on at extra cost | ? = unverified
 
@@ -819,59 +821,59 @@ Three services — Ultrahuman Blood Vision, Geviti Plus, and Parsley Longevity L
 
 ### 1. CBC (Complete Blood Count with Differential)
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| WBC | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| RBC | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Hemoglobin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Hematocrit | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| MCV | 45P | CALC | YES | YES | CALC | YES | YES | CALC | YES | YES | NO | YES | CALC |
-| RDW | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Platelet Count | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Neutrophils | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Lymphocytes | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Monocytes | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Eosinophils | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Basophils | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
+| WBC | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| RBC | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Hemoglobin | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Hematocrit | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| MCV | 45P | CALC | CALC | YES | YES | YES | YES | NO | YES | YES | YES | CALC | CALC |
+| RDW | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Platelet Count | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Neutrophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Lymphocytes | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Monocytes | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Eosinophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Basophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
 
 SiPhox cannot perform CBC from capillary blood.
 
 ### 2. CMP (Comprehensive Metabolic Panel)
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Glucose (fasting) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | BUN | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | Creatinine | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Sodium | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Potassium | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| Chloride | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
-| CO2 | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES |
+| Sodium | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Potassium | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Chloride | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| CO2 | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
 | Calcium | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Total Protein | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Albumin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
+| Total Protein | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Albumin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
 | HbA1c | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Fasting Insulin | 45P | YES | NO | YES | YES | YES | YES | ADD | YES | YES | NO | YES | YES |
-| C-Peptide | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | YES | NO | NO |
-| Uric Acid | 45P | YES | YES | YES | NO | YES | YES | NO | NO | YES | NO | ? | YES |
+| Fasting Insulin | 45P | YES | YES | YES | NO | YES | YES | NO | YES | YES | YES | ADD | YES |
+| C-Peptide | 45P | NO | NO | NO | NO | NO | NO | YES | NO | NO | NO | NO | NO |
+| Uric Acid | 45P | YES | NO | YES | YES | YES | YES | NO | YES | NO | ? | NO | YES |
 
 C-Peptide uniquely available from SiPhox only (capillary, accuracy concerns). Lifeforce Fasting Insulin requires $200 Metabolic add-on.
 
 ### 3. Lipid / Cardiovascular
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Total Cholesterol | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | HDL Cholesterol | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | Triglycerides | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| LDL Cholesterol | 45P | CALC | CALC | CALC | YES | CALC | CALC | CALC | CALC | CALC | CALC | ? | CALC |
-| ApoB | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Lp(a) | 45P | YES | NO | YES | NO | YES | YES | YES | NO | YES | YES | ? | YES |
-| LDL-P / NMR | 45P | YES | NO | YES | NO | NO | YES | ADD | NO | NO | NO | NO | NO |
-| Homocysteine | 45P | YES | NO | YES | NO | YES | YES | YES | NO | YES | YES | ? | YES |
-| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Omega-3 Index (RBC) | 45P | NO | NO | NO | NO | NO | ADD | NO | NO | YES | NO | NO | NO |
+| LDL Cholesterol | 45P | CALC | YES | CALC | CALC | CALC | CALC | CALC | CALC | CALC | ? | CALC | CALC |
+| ApoB | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Lp(a) | 45P | YES | NO | YES | NO | YES | YES | YES | YES | NO | ? | YES | YES |
+| LDL-P / NMR | 45P | YES | NO | YES | NO | YES | NO | NO | NO | NO | NO | ADD | NO |
+| Homocysteine | 45P | YES | NO | YES | NO | YES | YES | YES | YES | NO | ? | YES | YES |
+| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Omega-3 Index (RBC) | 45P | NO | NO | NO | NO | ADD | NO | NO | YES | NO | NO | NO | NO |
 | LP-PLA2 | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 | Oxidized LDL | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 | Fibrinogen | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
@@ -880,59 +882,59 @@ C-Peptide uniquely available from SiPhox only (capillary, accuracy concerns). Li
 
 ### 4. Thyroid
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | TSH | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Free T4 | 45P | YES | NO | YES | YES | YES | YES | YES | NO | NO | YES | ? | YES |
-| Free T3 | 45P | YES | NO | YES | NO | YES | YES | NO | NO | NO | YES | ? | YES |
-| TPO Antibodies | 45P | YES | NO | YES | NO | NO | NO | NO | NO | NO | YES | ? | YES |
-| TgAb | 45P | YES | NO | YES | NO | NO | NO | NO | NO | NO | YES | NO | NO |
+| Free T4 | 45P | YES | YES | YES | NO | YES | YES | YES | NO | NO | ? | YES | YES |
+| Free T3 | 45P | YES | NO | YES | NO | YES | YES | YES | NO | NO | ? | NO | YES |
+| TPO Antibodies | 45P | YES | NO | YES | NO | NO | NO | YES | NO | NO | ? | NO | YES |
+| TgAb | 45P | YES | NO | YES | NO | NO | NO | YES | NO | NO | NO | NO | NO |
 
 Superpower baseline has substandard thyroid (TSH + T3 Uptake + Total T4 + calculated T7 index, not direct Free T3/T4). SiPhox uniquely has full thyroid with both antibodies.
 
 ### 5. Hormones (Male Panel)
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Total Testosterone | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Free Testosterone | 45P | YES | CALC | CALC | YES | YES | YES | YES | YES | YES | CALC | ? | CALC |
-| Estradiol (E2) | 45P | YES | YES | YES | YES | YES | YES | YES | NO | YES | YES | ? | YES |
-| SHBG | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| DHEA-S | 45P | YES | YES | YES | NO | YES | YES | YES | NO | YES | YES | ? | YES |
-| LH | 45P | YES | NO | YES | YES | YES | YES | NO | NO | YES | YES | ? | YES |
-| FSH | 45P | YES | NO | YES | YES | YES | YES | NO | NO | YES | YES | ? | YES |
-| Prolactin | 45P | YES | NO | YES | NO | ? | ? | NO | NO | NO | YES | ? | NO |
-| IGF-1 | 45P | NO | NO | YES | NO | NO | YES | YES | NO | NO | NO | ? | YES |
-| Cortisol | 45P | YES | YES | YES | NO | YES | YES | NO | YES | YES | YES | ? | YES |
-| PSA Total | 45P | YES | NO | YES | YES | YES | YES | YES | NO | NO | YES | ? | YES |
+| Free Testosterone | 45P | YES | YES | CALC | CALC | YES | YES | CALC | YES | YES | ? | YES | CALC |
+| Estradiol (E2) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | NO | ? | YES | YES |
+| SHBG | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| DHEA-S | 45P | YES | NO | YES | YES | YES | YES | YES | YES | NO | ? | YES | YES |
+| LH | 45P | YES | YES | YES | NO | YES | YES | YES | YES | NO | ? | NO | YES |
+| FSH | 45P | YES | YES | YES | NO | YES | YES | YES | YES | NO | ? | NO | YES |
+| Prolactin | 45P | YES | NO | YES | NO | ? | ? | YES | NO | NO | ? | NO | NO |
+| IGF-1 | 45P | NO | NO | YES | NO | YES | NO | NO | NO | NO | ? | YES | YES |
+| Cortisol | 45P | YES | NO | YES | YES | YES | YES | YES | YES | YES | ? | NO | YES |
+| PSA Total | 45P | YES | YES | YES | NO | YES | YES | YES | NO | NO | ? | YES | YES |
 
 Mito Prolactin may be women-only. InsideTracker DHEA-S only in female panel. Function Health IGF-1 NOT in base. **Note:** Prolactin is a pituitary hormone; it is grouped with Sex Hormones here for clinical panel alignment, as most services bundle it with reproductive hormone panels.
 
 ### 6. Vitamins & Minerals
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Vitamin D (25-OH) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Ferritin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Iron (serum) | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | ? | YES |
-| TIBC | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | ? | YES |
-| Vitamin B12 | 45P | NO | NO | YES | NO | YES | YES | NO | YES | YES | YES | ? | YES |
-| Folate | 45P | ADD | NO | YES | NO | YES | YES | NO | YES | NO | YES | ? | NO |
-| RBC Magnesium | 45P | YES | NO | NO | NO | YES | YES | NO | YES | NO | NO | ? | NO |
-| Zinc | 45P | YES | NO | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
+| Ferritin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Iron (serum) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | NO | YES |
+| TIBC | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | NO | YES |
+| Vitamin B12 | 45P | NO | NO | YES | NO | YES | YES | YES | YES | YES | ? | NO | YES |
+| Folate | 45P | ADD | NO | YES | NO | YES | YES | YES | NO | YES | ? | NO | NO |
+| RBC Magnesium | 45P | YES | NO | NO | NO | YES | YES | NO | NO | YES | ? | NO | NO |
+| Zinc | 45P | YES | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO | NO |
 | Selenium | 45P | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Copper | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
+| Copper | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO | NO |
 | Ceruloplasmin | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 
 **Selenium available only as Function Health add-on (Extended Vitamins/Minerals); missing from all other services. Ceruloplasmin missing from ALL services.** Function Health tests MMA as B12 proxy, not direct B12. Folate also available as FH add-on. RBC Magnesium confirmed in Function Health, Mito Core/Pro, and InsideTracker (rare).
 
 ### 7. Inflammation
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Homocysteine | 45P | YES | NO | YES | NO | YES | YES | YES | NO | YES | YES | ? | YES |
-| ESR | 45P | NO | NO | YES | NO | YES | YES | NO | NO | NO | NO | ? | NO |
+| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Homocysteine | 45P | YES | NO | YES | NO | YES | YES | YES | YES | NO | ? | YES | YES |
+| ESR | 45P | NO | NO | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
 | Fibrinogen | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 | LP-PLA2 | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 
@@ -940,104 +942,104 @@ Fibrinogen and LP-PLA2 missing from all qualifying membership services (Fountain
 
 ### 8. Kidney
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Cystatin C | 45P | NO | NO | NO | NO | NO | YES | NO | NO | NO | YES | NO | NO |
+| Cystatin C | 45P | NO | NO | NO | NO | YES | NO | YES | NO | NO | NO | NO | NO |
 
 **Cystatin C available only from Mito Pro ($549) and SiPhox** -- critical for athletic individuals where creatinine-based eGFR is unreliable.
 
 ### 9. Liver
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | ALT | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | AST | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
 | ALP (Alkaline Phosphatase) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| GGT | 45P | YES | YES | YES | YES | YES | YES | NO | YES | NO | NO | ? | YES |
-| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Direct Bilirubin | -- | NO | YES | YES | NO | YES | YES | NO | NO | NO | NO | NO | NO |
-| Indirect Bilirubin | -- | NO | CALC | CALC | NO | CALC | CALC | NO | NO | NO | NO | NO | NO |
-| Albumin | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Total Protein | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Globulin | -- | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC | NO | ? | CALC |
+| GGT | 45P | YES | YES | YES | YES | YES | YES | NO | NO | YES | ? | NO | YES |
+| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Direct Bilirubin | -- | NO | NO | YES | YES | YES | YES | NO | NO | NO | NO | NO | NO |
+| Indirect Bilirubin | -- | NO | NO | CALC | CALC | CALC | CALC | NO | NO | NO | NO | NO | NO |
+| Albumin | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Total Protein | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES | YES |
+| Globulin | -- | CALC | CALC | CALC | CALC | CALC | CALC | NO | CALC | CALC | ? | CALC | CALC |
 
 GGT missing from Lifeforce, WHOOP, and SiPhox. Superpower and Mito both include Direct Bilirubin. Albumin, Total Protein, Globulin also counted in CMP but shown here for liver context.
 
 ### 10. Autoimmunity
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| ANA Screen | -- | YES | NO | ADD | NO | ADD | ADD | NO | NO | NO | NO | ? | NO |
+| ANA Screen | -- | YES | NO | ADD | NO | ADD | ADD | NO | NO | NO | ? | NO | NO |
 | ANA Titer | -- | YES | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 | ANA Pattern | -- | YES | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Rheumatoid Factor (RF) | -- | YES | NO | ADD | NO | ADD | ADD | NO | NO | NO | NO | ? | NO |
-| TPO Antibodies | 45P | YES | NO | YES | NO | NO | NO | NO | NO | NO | YES | ? | YES |
-| TgAb | 45P | YES | NO | YES | NO | NO | NO | NO | NO | NO | YES | NO | NO |
-| CCP Antibody | -- | NO | NO | ADD | NO | ADD | ADD | NO | NO | NO | NO | ? | NO |
+| Rheumatoid Factor (RF) | -- | YES | NO | ADD | NO | ADD | ADD | NO | NO | NO | ? | NO | NO |
+| TPO Antibodies | 45P | YES | NO | YES | NO | NO | NO | YES | NO | NO | ? | NO | YES |
+| TgAb | 45P | YES | NO | YES | NO | NO | NO | YES | NO | NO | NO | NO | NO |
+| CCP Antibody | -- | NO | NO | ADD | NO | ADD | ADD | NO | NO | NO | ? | NO | NO |
 | Celiac Panel | -- | NO | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
 
 Function Health includes ANA (screen/titer/pattern) + RF in base. Hundred Health **previously** included ANA (screen/titer/pattern) in base; the full ANA panel is now **not offered** on the current $199 panel (NO). Superpower autoimmunity is $139 add-on only. Mito offers $69 autoimmune screen add-on. TPO and TgAb also listed under Thyroid section above.
 
 ### 11. Cancer Screening
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PSA Total | 45P | YES | NO | YES | YES | YES | YES | YES | NO | NO | YES | ? | YES |
-| PSA Free | -- | YES | NO | YES | NO | YES | YES | NO | NO | NO | NO | ? | NO |
-| PSA % Free | -- | CALC | NO | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
+| PSA Total | 45P | YES | YES | YES | NO | YES | YES | YES | NO | NO | ? | YES | YES |
+| PSA Free | -- | YES | NO | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| PSA % Free | -- | CALC | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO | NO |
 | Galleri Multi-Cancer | -- | ADD | ADD | ADD | ADD | ADD | ADD | NO | NO | NO | NO | NO | NO |
 
 InsideTracker and WHOOP both missing PSA. Hundred Health: PSA Total retained in base; PSA Free / % Free not offered on the current $199 panel (NO). Galleri available as add-on from Function ($899), Superpower ($849), Hundred (**"Coming Q1 2026"** — not confirmed live as of 2026-06-08, no published price), Mito Ultra ($949 or $1,699 tier). **Galleri PPV caveat:** Galleri's positive predictive value is 38-44%, meaning 56-62% of positive results are false positives. This is important context for anyone considering the add-on -- a positive Galleri result requires confirmatory testing and should not be interpreted as a diagnosis.
 
 ### 12. Heavy Metals / Toxins
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Lead | -- | YES | NO | ADD | NO | ADD | YES | ADD | NO | NO | NO | ? | NO |
-| Mercury | -- | YES | NO | ADD | NO | ADD | YES | ADD | NO | NO | NO | ? | NO |
-| Arsenic | -- | NO | NO | ADD | NO | ADD | YES | ADD | NO | NO | NO | NO | NO |
+| Lead | -- | YES | NO | ADD | NO | YES | ADD | NO | NO | NO | ? | ADD | NO |
+| Mercury | -- | YES | NO | ADD | NO | YES | ADD | NO | NO | NO | ? | ADD | NO |
+| Arsenic | -- | NO | NO | ADD | NO | YES | ADD | NO | NO | NO | NO | ADD | NO |
 | Cadmium | -- | NO | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| 20-metal urine panel | -- | NO | ADD | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| 27-marker enviro toxins | -- | NO | ADD | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| 20-metal urine panel | -- | NO | NO | ADD | ADD | NO | NO | NO | NO | NO | NO | NO | NO |
+| 27-marker enviro toxins | -- | NO | NO | ADD | ADD | NO | NO | NO | NO | NO | NO | NO | NO |
 
 Function Health includes Lead + Mercury in base. Hundred Health **previously** included Lead only; the heavy-metals category is gone from the current $199 panel and Lead is now **not offered** (NO). Mito Pro adds Lead, Mercury, Arsenic. Superpower heavy metals ($129) and enviro toxins ($299) are urine-based add-ons. SiPhox cannot test heavy metals from capillary blood.
 
 ### 13. Urinalysis
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Full Urinalysis (15-27 params) | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
-| Urine pH | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
-| Urine Specific Gravity | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
-| Urine Protein | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
-| Urine Glucose | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
-| Urine Ketones | -- | YES | NO | YES | YES | YES | YES | NO | NO | NO | NO | ? | NO |
+| Full Urinalysis (15-27 params) | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| Urine pH | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| Urine Specific Gravity | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| Urine Protein | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| Urine Glucose | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
+| Urine Ketones | -- | YES | YES | YES | NO | YES | YES | NO | NO | NO | ? | NO | NO |
 
 Function Health 16-marker urinalysis in Annual draw. Superpower 15-marker in Advanced only. Hundred Health 27-parameter urinalysis still present on the current page (retained, YES); baseline noted 2x/yr but the live page no longer states frequency. Mito 21-marker urine panel in Core.
 
 ### 14. Other / Specialty
 
-| Biomarker | 45P | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Biomarker | 45P | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Amylase | -- | YES | NO | NO | NO | YES | YES | NO | NO | NO | NO | NO | NO |
 | Lipase | -- | YES | NO | NO | NO | YES | YES | NO | NO | NO | NO | NO | NO |
-| Creatine Kinase (CK) | -- | NO | NO | NO | NO | NO | NO | NO | YES | NO | NO | NO | NO |
-| Biological Age | -- | CALC | CALC | CALC | CALC | CALC | CALC | YES | ADD | NO | ADD | NO | ? |
-| Adiponectin | -- | NO | NO | NO | NO | NO | NO | ADD | NO | NO | NO | NO | NO |
-| Glycomark (1,5-AG) | -- | NO | NO | NO | NO | NO | NO | ADD | NO | NO | NO | NO | NO |
-| Beta Amyloid 42/40 | -- | NO | NO | NO | NO | NO | NO | ADD | NO | NO | NO | NO | NO |
-| pTau-217 | -- | NO | NO | NO | NO | NO | NO | ADD | NO | NO | NO | NO | NO |
+| Creatine Kinase (CK) | -- | NO | NO | NO | NO | NO | NO | NO | NO | YES | NO | NO | NO |
+| Biological Age | -- | CALC | CALC | CALC | CALC | CALC | CALC | ADD | NO | ADD | NO | YES | ? |
+| Adiponectin | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO |
+| Glycomark (1,5-AG) | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO |
+| Beta Amyloid 42/40 | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO |
+| pTau-217 | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO |
 
 Lifeforce brain protection panel ($200 add-on) includes Beta Amyloid, pTau-217, GFAP, ApoE genotype. InsideTracker uniquely includes Creatine Kinase. Biological age offered by most services but methodologies vary (blood-algorithm vs. epigenetic/DNA methylation).
 
 ### Summary: 45-Test Target Panel Coverage
 
-| Metric | FH | SP-B | SP-A | HH | MC | MP | LF | IT | WP | SiP | UH | GV |
+| Metric | FH | HH | SP-A | SP-B | MP | MC | SiP | WP | IT | UH | LF | GV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Directly measured from 45** | 32 | 17 | ~33 | 21 | 30 | 36 | ~20 | ~22 | ~24 | 24 | ? | ~30 |
-| **Coverage %** | **71%** | **38%** | **73%** | **47%** | **67%** | **80%** | **44%** | **49%** | **53%** | **53%** | **?** | **67%** |
-| **Annual cost** | $365 | $199 | $388 | $199 | $349 | $549 | $599 | $829 | $588 | $450 | $499 | $1,529 |
-| **Cost per 45P test covered** | $11 | $12 | $12 | $9.48 | $12 | $15 | $30 | $38 | $25 | $19 | ? | $51 |
+| **Directly measured from 45** | 32 | 21 | ~33 | 17 | 36 | 30 | 24 | ~24 | ~22 | ? | ~20 | ~30 |
+| **Coverage %** | **71%** | **47%** | **73%** | **38%** | **80%** | **67%** | **53%** | **53%** | **49%** | **?** | **44%** | **67%** |
+| **Annual cost** | $365 | $199 | $388 | $199 | $549 | $349 | $450 | $588 | $829 | $499 | $599 | $1,529 |
+| **Cost per 45P test covered** | $11 | $9.48 | $12 | $12 | $15 | $12 | $19 | $25 | $38 | ? | $30 | $51 |
 
 > **HH denominator note:** This row is **$/45-panel-test-covered** ($199 ÷ 45-panel hits: $199 ÷ 21 = $9.48) — a *different* metric from the **$/directly-measured-biomarker** "$3.75" shown in S2, S6.1, and S7.2 ($199 ÷ measured count). They are not in conflict; they use different denominators. See S6.1 footnote ^4 for the full key.
 
@@ -1055,19 +1057,19 @@ Lifeforce brain protection panel ($200 add-on) includes Beta Amyloid, pTau-217, 
 
 ## S6. Feature Comparison Matrix (Output 4)
 
-**Service abbreviations:** FH = Function Health, SP = Superpower, HH = Hundred Health, MH = Mito Health, LF = Lifeforce, WiH = Wild Health, FL = Fountain Life, SX = SiPhox Health, PH = Parsley Health, IT = InsideTracker, WP = WHOOP Advanced Labs, UH = Ultrahuman Blood Vision, GV = Geviti, EH = Empirical Health.
+**Service abbreviations (ranked order):** FH = Function Health, HH = Hundred Health, SP = Superpower, MH = Mito Health, SX = SiPhox Health, WP = WHOOP Advanced Labs, EH = Empirical Health, IT = InsideTracker, UH = Ultrahuman Blood Vision, LF = Lifeforce, PH = Parsley Health, GV = Geviti, WiH = Wild Health, FL = Fountain Life.
 
 Forward (shut down) and OneTwenty (closed beta) excluded.
 
 ### 1. Pricing & Value
 
-| Feature | FH | SP | HH | MH Core | MH Pro | LF Annual | WiH Std | SX U360 | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH Pro | MH Core | SX U360 | WP | EH | IT | UH | LF Annual | PH | GV | WiH Std |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Price/year** | $365 | $199-388 | $199 | $349 | $549 | $599 | ~$4,345 | ~$450 | $350 | ~$829 | ~$588 | $499 | ~$1,529 | $399 |
-| **Draws/year** | 2 | 1 | 2 | 1 | 1 | 2 | 4 | 2 | 1 | 2 | 2 | 2 | 2 | 3 |
-| **Cost per draw** | $183 | $199-388 | ~$99.50 | $349 | $549 | $300 | ~$1,086 | ~$225 | $350 | ~$415 | ~$294 | $250 | ~$765 | $133 |
-| **Cost per biomarker** ^1 ^4 | ~$3.97 | ~$3.62-4.46 | $3.75 | ~$5.13 | ~$6.86 | ~$23.04 | ~$131 | ~$10.00 | ~$4.86 | ~$17.27 | ~$10.69 | ~$5.54 | ~$21.84 | ~$8.31 |
-| **HSA/FSA** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Mentioned | Yes | Not confirmed |
+| **Price/year** | $365 | $199 | $199-388 | $549 | $349 | ~$450 | ~$588 | $399 | ~$829 | $499 | $599 | $350 | ~$1,529 | ~$4,345 |
+| **Draws/year** | 2 | 2 | 1 | 1 | 1 | 2 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 4 |
+| **Cost per draw** | $183 | ~$99.50 | $199-388 | $549 | $349 | ~$225 | ~$294 | $133 | ~$415 | $250 | $300 | $350 | ~$765 | ~$1,086 |
+| **Cost per biomarker** ^1 ^4 | ~$3.97 | $3.75 | ~$3.62-4.46 | ~$6.86 | ~$5.13 | ~$10.00 | ~$10.69 | ~$8.31 | ~$17.27 | ~$5.54 | ~$23.04 | ~$4.86 | ~$21.84 | ~$131 |
+| **HSA/FSA** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Not confirmed | Yes | Mentioned | Yes | Yes | Yes | Yes |
 
 ^1 **Cost/biomarker methodology:** Annual price / directly measured unique analytes (base tier, single draw). Excludes calculated ratios, CBC/CMP sub-components counted individually by marketing, and add-on panels. This standardized denominator may differ from service-reported figures. Lifeforce corrected from $14.04 (which divided by ~43 including add-ons) to $23.04 (dividing by ~26 base-tier directly measured). **Note:** The Lifeforce count (~26) uses a stricter "clinically distinct" standard than the CBC/CMP sub-component counting applied to other services -- if the same standard were applied uniformly, other services' counts would also decrease (e.g., Function Health's ~92 includes all CBC/CMP sub-components individually). This counting asymmetry may slightly disadvantage Lifeforce in $/biomarker comparisons.
 
@@ -1075,57 +1077,57 @@ Forward (shut down) and OneTwenty (closed beta) excluded.
 
 ### 2. App & Dashboard
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Web app** | Yes | Yes | Yes | Yes | Yes | Vibrant Practice | Yes | Web only | Yes | WHOOP web | Ultrahuman app | Yes | Yes |
-| **iOS app (rating)** | 4.9/5 (18,496) | 4.9/5 (173) | 4.9/5 (68), v1.39.0 | No US app | Exists | Exists | 3.4/5 (10) | No app | Yes | 4.6+/5 | Yes | Yes | Yes |
-| **UX assessment** | Clean, intuitive, universally praised | "Most beautiful" but "very light" | Maturing; rating count tripled (4.9/5, 68) but still a young app (~6 mo); Android availability unverified | Web-only, organized by body system | "Not intuitive" with glitches | Transitioning platforms | Immature/buggy | Web portal only | Established, actionable | WHOOP app well-established | App integrates CGM + blood | Mixed reviews | Newer app |
+| **Web app** | Yes | Yes | Yes | Yes | Yes | WHOOP web | Yes | Yes | Ultrahuman app | Yes | Web only | Yes | Vibrant Practice |
+| **iOS app (rating)** | 4.9/5 (18,496) | 4.9/5 (68), v1.39.0 | 4.9/5 (173) | No US app | 3.4/5 (10) | 4.6+/5 | Yes | Yes | Yes | Exists | No app | Yes | Exists |
+| **UX assessment** | Clean, intuitive, universally praised | Maturing; rating count tripled (4.9/5, 68) but still a young app (~6 mo); Android availability unverified | "Most beautiful" but "very light" | Web-only, organized by body system | Immature/buggy | WHOOP app well-established | Newer app | Established, actionable | App integrates CGM + blood | "Not intuitive" with glitches | Web portal only | Mixed reviews | Transitioning platforms |
 
 ### 3. Data & Integration
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **PDF export** | Yes | Yes | Yes | Yes | Not confirmed | Not confirmed | Yes | Not confirmed | Yes | Yes | Yes | Not confirmed | Not confirmed |
-| **CSV export** | No native (3rd-party extension) | Unknown format | **NO** | Not confirmed | Not confirmed | Not confirmed | Not confirmed | Not confirmed | **Yes** | WHOOP exportable | **Yes (CSV/XML)** | Not confirmed | Not confirmed |
-| **API access** | No | No | No | No | No | No | No | No | No | Limited developer | No | No | No |
-| **Garmin sync** | No | Yes (v1.0.6, unverified) | **Yes (confirmed)** | No | No | No | Uncertain (omitted from official list) | No | **Yes (confirmed)** | No (WHOOP only) | Indirect (Terra API) | No | No |
-| **Other wearable sync** | Apple Health | Oura, WHOOP | Apple Health, Oura, Polar, InBody, Cronometer, MyFitnessPal, Ultrahuman, Biostrap (+ more) | No | No | Premium biometric | 300+ claimed | No | Apple Health, Oura, Fitbit | WHOOP strap | Ultrahuman Ring | Not featured | Apple Watch, Fitbit |
-| **Medical record import** | Limited | Upload past PDF | **450+ EHR (unique)** | Upload past labs | Not mentioned | Not confirmed | Upload 3rd-party PDFs | Not documented | 30 uploads/yr + DNA | Upload past PDFs | Vision Cloud | Not mentioned | Not mentioned |
+| **PDF export** | Yes | Yes | Yes | Yes | Yes | Yes | Not confirmed | Yes | Yes | Not confirmed | Not confirmed | Not confirmed | Not confirmed |
+| **CSV export** | No native (3rd-party extension) | **NO** | Unknown format | Not confirmed | Not confirmed | WHOOP exportable | Not confirmed | **Yes** | **Yes (CSV/XML)** | Not confirmed | Not confirmed | Not confirmed | Not confirmed |
+| **API access** | No | No | No | No | No | Limited developer | No | No | No | No | No | No | No |
+| **Garmin sync** | No | **Yes (confirmed)** | Yes (v1.0.6, unverified) | No | Uncertain (omitted from official list) | No (WHOOP only) | No | **Yes (confirmed)** | Indirect (Terra API) | No | No | No | No |
+| **Other wearable sync** | Apple Health | Apple Health, Oura, Polar, InBody, Cronometer, MyFitnessPal, Ultrahuman, Biostrap (+ more) | Oura, WHOOP | No | 300+ claimed | WHOOP strap | Apple Watch, Fitbit | Apple Health, Oura, Fitbit | Ultrahuman Ring | No | No | Not featured | Premium biometric |
+| **Medical record import** | Limited | **450+ EHR (unique)** | Upload past PDF | Upload past labs | Upload 3rd-party PDFs | Upload past PDFs | Not mentioned | 30 uploads/yr + DNA | Vision Cloud | Not mentioned | Not documented | Not mentioned | Not confirmed |
 
 ### 4. Interpretation
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **AI analysis** | Yes (Private AI Chat) | Yes (17 health scores) | Yes | Yes (MitoMD 24/7) | Yes (Lifescore) | No (physician-only) | Yes (Sai AI) | Clinician-reviewed | Yes (AI-driven) | Yes (AI + clinician) | Yes (UltraTrace) | Yes (blueprint) | Yes (AI risk scoring) |
-| **Clinician notes** | Generic/AI-assisted | No | Clinician-reviewed protocol | AI + licensed doctor | Physician reviews | 50-page physician report | Expert-reviewed | Clinician-reviewed | No (algorithm-only) | Clinician-reviewed | AI-powered | Provider reviews | MD review |
-| **1:1 consultation** | No | No | No | **Yes (included)** | **Yes (45-60 min)** | **Yes (quarterly)** | $39 add-on | $200 add-on | No | No | No | **Yes (included)** | Yes ($399 plan) |
-| **Prescribing** | No | No | No | No | **Yes (TRT, peptides)** | Non-DEA only | No | Via Complete Care | No | No | No | **Yes (TRT, GLP-1s)** | No |
-| **Supplement recs** | Yes (no upsell) | Aggressive upsell ($400+/mo) | Member pricing / discounts on Thorne / Momentous | Included (no proprietary) | Upsell (30% off proprietary) | 15% off Fullscript | Included | Upsell criticized | Recommendations only | Within action plans | Within recommendations | Custom blend (extra) | Within protocol |
+| **AI analysis** | Yes (Private AI Chat) | Yes | Yes (17 health scores) | Yes (MitoMD 24/7) | Yes (Sai AI) | Yes (AI + clinician) | Yes (AI risk scoring) | Yes (AI-driven) | Yes (UltraTrace) | Yes (Lifescore) | Clinician-reviewed | Yes (blueprint) | No (physician-only) |
+| **Clinician notes** | Generic/AI-assisted | Clinician-reviewed protocol | No | AI + licensed doctor | Expert-reviewed | Clinician-reviewed | MD review | No (algorithm-only) | AI-powered | Physician reviews | Clinician-reviewed | Provider reviews | 50-page physician report |
+| **1:1 consultation** | No | No | No | **Yes (included)** | $39 add-on | No | Yes ($399 plan) | No | No | **Yes (45-60 min)** | $200 add-on | **Yes (included)** | **Yes (quarterly)** |
+| **Prescribing** | No | No | No | No | No | No | No | No | No | **Yes (TRT, peptides)** | Via Complete Care | **Yes (TRT, GLP-1s)** | Non-DEA only |
+| **Supplement recs** | Yes (no upsell) | Member pricing / discounts on Thorne / Momentous | Aggressive upsell ($400+/mo) | Included (no proprietary) | Included | Within action plans | Within protocol | Recommendations only | Within recommendations | Upsell (30% off proprietary) | Upsell criticized | Custom blend (extra) | 15% off Fullscript |
 
 ### 5. Monitoring
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Biological age** | Yes (blood, 2x/yr) | Yes (PhenoAge) | Yes (both draws) | Yes (blood) | Yes (Lifescore) | Yes (TruDiagnostic epigenetic) | $325 add-on | Mentioned | $99 add-on | No | Not confirmed | Mentioned | No |
-| **Trend tracking** | Yes (multi-draw) | Yes (lifetime) | Yes (+ imported history) | Yes (AI graphs) | Yes (over time) | Yes (quarterly) | Yes (unified) | Yes (annual) | Yes (extensive) | Yes (across draws) | Yes | Yes | Yes |
-| **Action plans** | ALPHA (top-5 foods, supplements) | AI action plan | **100-day clinician protocol** | 5-pillar plan | Clinician-built program | Personalized plans | Personalized insights | Optional ($200) | Per-biomarker recs | Clinician-reviewed | Lifestyle recs | Specialist builds protocol | Custom nutrition + exercise |
+| **Biological age** | Yes (blood, 2x/yr) | Yes (both draws) | Yes (PhenoAge) | Yes (blood) | $325 add-on | No | No | $99 add-on | Not confirmed | Yes (Lifescore) | Mentioned | Mentioned | Yes (TruDiagnostic epigenetic) |
+| **Trend tracking** | Yes (multi-draw) | Yes (+ imported history) | Yes (lifetime) | Yes (AI graphs) | Yes (unified) | Yes (across draws) | Yes | Yes (extensive) | Yes | Yes (over time) | Yes (annual) | Yes | Yes (quarterly) |
+| **Action plans** | ALPHA (top-5 foods, supplements) | **100-day clinician protocol** | AI action plan | 5-pillar plan | Personalized insights | Clinician-reviewed | Custom nutrition + exercise | Per-biomarker recs | Lifestyle recs | Clinician-built program | Optional ($200) | Specialist builds protocol | Personalized plans |
 
 ### 6. Labs & Logistics
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Lab network** | Quest | Quest + Labcorp + BioRef | Quest + BioReference + LabCorp | LabCorp (conflicting) | Labcorp + Quest | LabCorp | CLIA partner (shipped) | Quest | Quest | Quest | Quest + BioRef | CLIA partner | 2,200+ (unnamed) |
-| **At-home option** | No | Yes (+$99-119) | Yes (fee unconfirmed/unpublished; industry $75-$150) | No | Yes (1st included) | No (Std) | All at-home ($0-20) | Available (+fee) | Yes (+$119) | Not mentioned | Yes (phlebotomist) | Yes (major metros) | No |
-| **Turnaround** | 1-2 days first; 3-4 wks full | 5-7 days base; 12-15 adv | Days to 1-2 weeks | 5-7 business days | 7-14 business days | Blood 3-7d; DNA 4-6wk | 7-10 business days | 10-14 days | 5-7 business days | 3-7 business days | Partial same-day | 5-7 days | Not specified |
+| **Lab network** | Quest | Quest + BioReference + LabCorp | Quest + Labcorp + BioRef | LabCorp (conflicting) | CLIA partner (shipped) | Quest | 2,200+ (unnamed) | Quest | Quest + BioRef | Labcorp + Quest | Quest | CLIA partner | LabCorp |
+| **At-home option** | No | Yes (fee unconfirmed/unpublished; industry $75-$150) | Yes (+$99-119) | No | All at-home ($0-20) | Not mentioned | No | Yes (+$119) | Yes (phlebotomist) | Yes (1st included) | Available (+fee) | Yes (major metros) | No (Std) |
+| **Turnaround** | 1-2 days first; 3-4 wks full | Days to 1-2 weeks | 5-7 days base; 12-15 adv | 5-7 business days | 7-10 business days | 3-7 business days | Not specified | 5-7 business days | Partial same-day | 7-14 business days | 10-14 days | 5-7 days | Blood 3-7d; DNA 4-6wk |
 | **US availability** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
 
 ### 7. Trust
 
-| Feature | FH | SP | HH | MH | LF | WiH | SX | PH | IT | WP | UH | GV | EH |
+| Feature | FH | HH | SP | MH | SX | WP | EH | IT | UH | LF | PH | GV | WiH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Trustpilot** | 4.3/5 (997) | 4.6/5 (216) | None (no hundred.com profile; joinhundred.com 4.1/261 is a DIFFERENT company) | 4.8/5 (101) | 4.3/5 (172) | Reviews.io 3.9/5 (59) | 4.5/5 (568) | 4.0/5 (26); BBB D- | 4.1/5 (617) | Too new | 530 reviews | None found | 3 reviews |
-| **Year founded** | 2021 | 2023 | Dec 2025 (~6 months old as of 2026-06) | 2023 (YC S24) | 2021 | 2006 | 2020 (YC S20) | 2016 | 2009 | WHOOP 2012; Labs 2025 | 2019; Blood 2025 | ~2023 | 2023 (YC S23) |
-| **Known issues** | Generic clinician notes; auto-renewal; slow vs Quest direct | Inflated biomarker count; lawsuit; doctored ad; supplement upsell | Draw-2 reduced-scope complaint (company-acknowledged); supplement-upsell complaints; ~6 mo old; funding undisclosed; reduced panel | Very new; web-only; no wearable; Prolactin unclear | Supplement upsell; liver damage allegation; billing after cancel | Billing fraud ($2K+); 4+ mo DNA delays; data access issues | Accuracy (300%+ discrepancies); buggy app; no CMO | Supplement pushing; BBB D-; male panel uncertain | Generic recs; pricing complexity | Requires WHOOP; limited thyroid | Unpublished biomarker list; Garmin indirect | Rx upsell; very new | Very new; no hormones |
+| **Trustpilot** | 4.3/5 (997) | None (no hundred.com profile; joinhundred.com 4.1/261 is a DIFFERENT company) | 4.6/5 (216) | 4.8/5 (101) | 4.5/5 (568) | Too new | 3 reviews | 4.1/5 (617) | 530 reviews | 4.3/5 (172) | 4.0/5 (26); BBB D- | None found | Reviews.io 3.9/5 (59) |
+| **Year founded** | 2021 | Dec 2025 (~6 months old as of 2026-06) | 2023 | 2023 (YC S24) | 2020 (YC S20) | WHOOP 2012; Labs 2025 | 2023 (YC S23) | 2009 | 2019; Blood 2025 | 2021 | 2016 | ~2023 | 2006 |
+| **Known issues** | Generic clinician notes; auto-renewal; slow vs Quest direct | Draw-2 reduced-scope complaint (company-acknowledged); supplement-upsell complaints; ~6 mo old; funding undisclosed; reduced panel | Inflated biomarker count; lawsuit; doctored ad; supplement upsell | Very new; web-only; no wearable; Prolactin unclear | Accuracy (300%+ discrepancies); buggy app; no CMO | Requires WHOOP; limited thyroid | Very new; no hormones | Generic recs; pricing complexity | Unpublished biomarker list; Garmin indirect | Supplement upsell; liver damage allegation; billing after cancel | Supplement pushing; BBB D-; male panel uncertain | Rx upsell; very new | Billing fraud ($2K+); 4+ mo DNA delays; data access issues |
 
 ### Key Differentiators at a Glance
 
@@ -1379,16 +1381,16 @@ Function Health is the best value **where comprehensive coverage is the goal** (
 | **Geviti †** | $1,529 | 4.03 (#14) | $21.84/biomarker; unpublished biomarker list (Priority/Total/Value-efficiency confidence-discounted ×0.5 per §4.6); Rx upsell pressure |
 | **Parsley Health †** | $350 | 4.22 (#13) | No published biomarker list (Priority/Total/Value-efficiency confidence-discounted ×0.5 per §4.6); male panel uncertain; BBB D-; no mobile app; no data export |
 | **Lifeforce** | $599-$1,838 | 4.25 (#12) | ~26 clinically distinct base; $23.04/biomarker; supplement upsell with liver damage allegation; only 10 states |
-| **InsideTracker** | $829 | 5.20 (#10) | $17.27/biomarker (expensive for the count); ~22/45 base; no Lp(a), Homocysteine, or DHEA-S for males; no clinician consultation — avoid as a *primary comprehensive* service despite its mid-pack score |
 | **SiPhox Health** | $450 | 5.50 (#7) | 300%+ testosterone discrepancy; 600%+ vitamin D variance; no CBC; 5-15% sample failure; "not a substitute for annual bloodwork" (SiPhox's own admission) — accuracy concerns outweigh its value/convenience score |
 
 **Services with caveats (proceed carefully):**
 
 | Service | Caveat |
 |---------|--------|
-| **Hundred Health ($199)** | **Watch.** Price dropped ~60% to $199; with Value (30%) and Total Coverage (30%) the dominant weights and Priority Coverage at 5%, its **field-top blended Value (9.5)** — lowest cost per biomarker ($3.75) at the lowest price ($199) — plus confirmed Garmin, 450+ EHR import (Data Access 8), and field-best logistics (Convenience 8) lift it to **7.10 / rank #2**. But the blood panel was cut alongside the repricing, holding Total Coverage at 5. ~6 months old (launched Dec 2025). Maturity risk and the reduced panel are the main concerns; worth re-checking whether HH restores any dropped specialty markers. |
+| **Hundred Health ($199)** | **Watch.** Price dropped ~60% to $199; with Value (30%) and Total Coverage (30%) the dominant weights and Priority Coverage at 5%, its **field-top blended Value (9.5)** — lowest cost per biomarker ($3.75) at the lowest price ($199) — plus confirmed Garmin, 450+ EHR import (Data Access 8), and field-best logistics (Convenience 8) lift it to **7.10 / rank #2**. But the blood panel was cut alongside the repricing, holding Total Coverage at 5. ~6 months old (launched Dec 2025). Maturity risk and the reduced panel are the main concerns; worth re-checking whether HH restores any dropped specialty markers. **Maturity-risk counterpoint:** founder/CEO Tyler Smith has a verified execution track record — he founded and bootstrapped SkySlope (real-estate transaction software) to its 2017 majority acquisition by Fidelity National Financial (NYSE: FNF) at an $80M+ valuation, and is an early investor in Function Health and TruMe. |
 | **Superpower Base+Advanced ($388)** | Active lawsuit; aggressive supplement upselling; FTC cancellation concerns. Good value if trust issues acceptable. Score 6.95 (#3). |
 | **Superpower Base Only ($199)** | Ranks **#4 (6.45)** on a strong blended Value — the $199 price (affordability 10) plus a low cost-per-biomarker ($3.62) — but covers only 17/45 priority markers (~55 measured, marketed as "100+"). Excellent value, insufficient as a *sole* comprehensive panel; same lawsuit / supplement-upsell concerns as Superpower B+A. |
+| **InsideTracker ($829)** | **Best data integration in the field** (confirmed Garmin + native CSV export + 30 record uploads/yr — the Best Data Integration award winner), but $17.27/biomarker is expensive for its ~22/45 panel, and it lacks Lp(a), Homocysteine, and DHEA-S for males plus any clinician consultation. Strong as a *companion* data hub; not recommended as a sole primary panel. Score 5.20 (#10). |
 | **Ultrahuman Blood Vision ($499)** | Individual biomarker list not published; cannot verify coverage claims. Without the §4.6 discount it would rank **#4 (6.90)**, but because that standing rested on an unpublished panel, the confidence discount (Priority/Total/Value-efficiency ×0.5) drops it to **5.20 / rank #11**. LOW confidence. |
 
 ### (f) Recommended Combination
@@ -1581,6 +1583,8 @@ Empirical Health, Ultrahuman, Geviti, and the disqualified services (Forward, On
 - Trustpilot, BBB, and Apple App Store listings (per-service ratings above).
 - Independent blog/comparison reviews: Outliyr, Elo Health, Gene Food, Heal Nourish Grow.
 - Sherwood News investigative reporting on membership-testing business models (Dec 2025).
+- Forbes profile of Hundred Health's launch and founder Tyler Smith (Dec 2025).
+- Fidelity National Financial press release: FNF Group acquisition of a majority interest in SkySlope (Oct 2017).
 - Hundred Health App Store reviews (pricing, draw-scope, and EHR-import member reports).
 
 ---
