@@ -811,233 +811,233 @@ Three services — Ultrahuman Blood Vision, Geviti Plus, and Parsley Longevity L
 
 ## S5. Coverage Matrix (Output 3)
 
-**Column Key (ranked order):** HH = Hundred Health, FH = Function Health, SP-A = Superpower Base+Advanced, MP = Mito Pro, MC = Mito Core, SP-B = Superpower Baseline, SiP = SiPhox, WP = WHOOP, IT = InsideTracker, LF = Lifeforce, UH = Ultrahuman, GV = Geviti
+**Column Key (ranked order):** HH = Hundred Health, FH = Function Health, SP-A = Superpower Base+Advanced, MP = Mito Pro, MC = Mito Core, SP-B = Superpower Baseline, SiP = SiPhox, WP = WHOOP, IT = InsideTracker, LF = Lifeforce
 
-**Cell Legend:** YES = directly measured in base | NO = not offered | CALC = calculated/derived | ADD = add-on at extra cost | ? = unverified
+**Cell Legend:** ✅ = directly measured in base | ❌ = not offered | CALC = calculated/derived | ADD = add-on at extra cost | ? = unverified
 
-**Excluded from matrix:** Forward (shut down), Wild Health (no published list), Fountain Life (no standalone tier), Parsley (no published list), Empirical (no hormones), OneTwenty (closed beta).
+**Excluded from matrix:** Forward (shut down), Wild Health (no published list), Ultrahuman (no published list), Geviti (no published list), Fountain Life (no standalone tier), Parsley (no published list), Empirical (no hormones), OneTwenty (closed beta).
 
 ### 1. CBC (Complete Blood Count with Differential)
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| WBC | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| RBC | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Hemoglobin | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Hematocrit | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| MCV | 45P | CALC | CALC | YES | YES | YES | YES | NO | YES | YES | CALC | YES | CALC |
-| RDW | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Platelet Count | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Neutrophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Lymphocytes | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Monocytes | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Eosinophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Basophils | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WBC | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| RBC | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Hemoglobin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Hematocrit | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| MCV | 45P | CALC | CALC | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | CALC |
+| RDW | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Platelet Count | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Neutrophils | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Lymphocytes | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Monocytes | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Eosinophils | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Basophils | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 SiPhox cannot perform CBC from capillary blood.
 
 ### 2. CMP (Comprehensive Metabolic Panel)
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Glucose (fasting) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| BUN | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Creatinine | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Sodium | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Potassium | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Chloride | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| CO2 | 45P | YES | YES | YES | YES | YES | YES | NO | YES | YES | YES | YES | YES |
-| Calcium | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Total Protein | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Albumin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| HbA1c | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Fasting Insulin | 45P | YES | YES | YES | YES | YES | NO | NO | YES | YES | ADD | YES | YES |
-| C-Peptide | 45P | NO | NO | NO | NO | NO | NO | YES | NO | NO | NO | NO | NO |
-| Uric Acid | 45P | NO | YES | YES | YES | YES | YES | NO | YES | NO | NO | ? | YES |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Glucose (fasting) | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| BUN | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Creatinine | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Sodium | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Potassium | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Chloride | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| CO2 | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Calcium | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Total Protein | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Albumin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Total Bilirubin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| HbA1c | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Fasting Insulin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ | ADD |
+| C-Peptide | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| Uric Acid | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ADD |
 
 C-Peptide uniquely available from SiPhox only (capillary, accuracy concerns). Lifeforce Fasting Insulin requires $200 Metabolic add-on.
 
 ### 3. Lipid / Cardiovascular
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Total Cholesterol | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| HDL Cholesterol | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Triglycerides | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| LDL Cholesterol | 45P | YES | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC | ? | CALC |
-| ApoB | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Lp(a) | 45P | NO | YES | YES | YES | YES | NO | YES | YES | NO | YES | ? | YES |
-| LDL-P / NMR | 45P | NO | YES | YES | YES | NO | NO | NO | NO | NO | ADD | NO | NO |
-| Homocysteine | 45P | NO | YES | YES | YES | YES | NO | YES | YES | NO | YES | ? | YES |
-| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Omega-3 Index (RBC) | 45P | NO | NO | NO | ADD | NO | NO | NO | YES | NO | NO | NO | NO |
-| LP-PLA2 | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Oxidized LDL | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Fibrinogen | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Cholesterol | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| HDL Cholesterol | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Triglycerides | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| LDL Cholesterol | 45P | ✅ | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC | CALC |
+| ApoB | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Lp(a) | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| LDL-P / NMR | 45P | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ADD |
+| Homocysteine | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| hs-CRP | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Omega-3 Index (RBC) | 45P | ❌ | ❌ | ❌ | ADD | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| LP-PLA2 | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Oxidized LDL | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Fibrinogen | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 **LP-PLA2, Oxidized LDL, and Fibrinogen missing from all qualifying membership services** (Fountain Life offers LP-PLA2 but is disqualified per DQ-6: no standalone blood option). WHOOP uniquely includes RBC Omega-3 Index. Function Health includes serum Omega-3 (not RBC Index). **Hundred Health:** Lp(a), LDL-P/NMR, and Homocysteine are not offered on the current $199 panel (NO); ApoB and hs-CRP are retained (YES).
 
 ### 4. Thyroid
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| TSH | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Free T4 | 45P | YES | YES | YES | YES | YES | NO | YES | NO | NO | YES | ? | YES |
-| Free T3 | 45P | NO | YES | YES | YES | YES | NO | YES | NO | NO | NO | ? | YES |
-| TPO Antibodies | 45P | NO | YES | YES | NO | NO | NO | YES | NO | NO | NO | ? | YES |
-| TgAb | 45P | NO | YES | YES | NO | NO | NO | YES | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TSH | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Free T4 | 45P | ✅ | ✅ | CALC | ✅ | ✅ | CALC | ✅ | ❌ | ❌ | ✅ |
+| Free T3 | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| TPO Antibodies | 45P | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| TgAb | 45P | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 
 Superpower baseline has substandard thyroid (TSH + T3 Uptake + Total T4 + calculated T7 index, not direct Free T3/T4). SiPhox uniquely has full thyroid with both antibodies.
 
 ### 5. Hormones (Male Panel)
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Total Testosterone | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Free Testosterone | 45P | YES | YES | CALC | YES | YES | CALC | CALC | YES | YES | YES | ? | CALC |
-| Estradiol (E2) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | NO | YES | ? | YES |
-| SHBG | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| DHEA-S | 45P | NO | YES | YES | YES | YES | YES | YES | YES | NO | YES | ? | YES |
-| LH | 45P | YES | YES | YES | YES | YES | NO | YES | YES | NO | NO | ? | YES |
-| FSH | 45P | YES | YES | YES | YES | YES | NO | YES | YES | NO | NO | ? | YES |
-| Prolactin | 45P | NO | YES | YES | ? | ? | NO | YES | NO | NO | NO | ? | NO |
-| IGF-1 | 45P | NO | NO | YES | YES | NO | NO | NO | NO | NO | YES | ? | YES |
-| Cortisol | 45P | NO | YES | YES | YES | YES | YES | YES | YES | YES | NO | ? | YES |
-| PSA Total | 45P | YES | YES | YES | YES | YES | NO | YES | NO | NO | YES | ? | YES |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Total Testosterone | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Free Testosterone | 45P | ✅ | ✅ | CALC | ✅ | ✅ | CALC | CALC | ✅ | ✅ | ✅ |
+| Estradiol (E2) | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ADD | ✅ |
+| SHBG | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DHEA-S | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| LH | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| FSH | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| Prolactin | 45P | ❌ | ✅ | ✅ | ? | ? | ❌ | ✅ | ❌ | ❌ | ❌ |
+| IGF-1 | 45P | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Cortisol | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| PSA Total | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ |
 
 Mito Prolactin may be women-only. InsideTracker DHEA-S only in female panel. Function Health IGF-1 NOT in base. **Note:** Prolactin is a pituitary hormone; it is grouped with Sex Hormones here for clinical panel alignment, as most services bundle it with reproductive hormone panels.
 
 ### 6. Vitamins & Minerals
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Vitamin D (25-OH) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Ferritin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Iron (serum) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | ? | YES |
-| TIBC | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | NO | ? | YES |
-| Vitamin B12 | 45P | NO | NO | YES | YES | YES | NO | YES | YES | YES | NO | ? | YES |
-| Folate | 45P | NO | ADD | YES | YES | YES | NO | YES | NO | YES | NO | ? | NO |
-| RBC Magnesium | 45P | NO | YES | NO | YES | YES | NO | NO | NO | YES | NO | ? | NO |
-| Zinc | 45P | NO | YES | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
-| Selenium | 45P | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Copper | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
-| Ceruloplasmin | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vitamin D (25-OH) | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Ferritin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Iron (serum) | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| TIBC | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| Vitamin B12 | 45P | ❌ | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ |
+| Folate | 45P | ❌ | ADD | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| RBC Magnesium | 45P | ❌ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Zinc | 45P | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Selenium | 45P | ❌ | ADD | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Copper | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Ceruloplasmin | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 **Selenium available only as Function Health add-on (Extended Vitamins/Minerals); missing from all other services. Ceruloplasmin missing from ALL services.** Function Health tests MMA as B12 proxy, not direct B12. Folate also available as FH add-on. RBC Magnesium confirmed in Function Health, Mito Core/Pro, and InsideTracker (rare).
 
 ### 7. Inflammation
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| hs-CRP | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Homocysteine | 45P | NO | YES | YES | YES | YES | NO | YES | YES | NO | YES | ? | YES |
-| ESR | 45P | NO | NO | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Fibrinogen | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| LP-PLA2 | 45P | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hs-CRP | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Homocysteine | 45P | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ |
+| ESR | 45P | ❌ | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Fibrinogen | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| LP-PLA2 | 45P | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 Fibrinogen and LP-PLA2 missing from all qualifying membership services (Fountain Life offers LP-PLA2 but is disqualified per DQ-6). ESR available only in Superpower Advanced and Mito Core/Pro.
 
 ### 8. Kidney
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Cystatin C | 45P | NO | NO | NO | YES | NO | NO | YES | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cystatin C | 45P | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 
 **Cystatin C available only from Mito Pro ($549) and SiPhox** -- critical for athletic individuals where creatinine-based eGFR is unreliable.
 
 ### 9. Liver
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ALT | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| AST | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| ALP (Alkaline Phosphatase) | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| GGT | 45P | YES | YES | YES | YES | YES | YES | NO | NO | YES | NO | ? | YES |
-| Total Bilirubin | 45P | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Direct Bilirubin | -- | NO | NO | YES | YES | YES | YES | NO | NO | NO | NO | NO | NO |
-| Indirect Bilirubin | -- | NO | NO | CALC | CALC | CALC | CALC | NO | NO | NO | NO | NO | NO |
-| Albumin | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Total Protein | -- | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | ? | YES |
-| Globulin | -- | CALC | CALC | CALC | CALC | CALC | CALC | NO | CALC | CALC | CALC | ? | CALC |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ALT | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| AST | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| ALP (Alkaline Phosphatase) | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| GGT | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| Total Bilirubin | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Direct Bilirubin | -- | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Indirect Bilirubin | -- | ❌ | ❌ | CALC | CALC | CALC | CALC | ❌ | ❌ | ❌ | ❌ |
+| Albumin | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Total Protein | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Globulin | -- | CALC | CALC | CALC | CALC | CALC | CALC | ❌ | CALC | CALC | CALC |
 
 GGT missing from Lifeforce, WHOOP, and SiPhox. Superpower and Mito both include Direct Bilirubin. Albumin, Total Protein, Globulin also counted in CMP but shown here for liver context.
 
 ### 10. Autoimmunity
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ANA Screen | -- | NO | YES | ADD | ADD | ADD | NO | NO | NO | NO | NO | ? | NO |
-| ANA Titer | -- | NO | YES | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| ANA Pattern | -- | NO | YES | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Rheumatoid Factor (RF) | -- | NO | YES | ADD | ADD | ADD | NO | NO | NO | NO | NO | ? | NO |
-| TPO Antibodies | 45P | NO | YES | YES | NO | NO | NO | YES | NO | NO | NO | ? | YES |
-| TgAb | 45P | NO | YES | YES | NO | NO | NO | YES | NO | NO | NO | NO | NO |
-| CCP Antibody | -- | NO | NO | ADD | ADD | ADD | NO | NO | NO | NO | NO | ? | NO |
-| Celiac Panel | -- | NO | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ANA Screen | -- | ❌ | ✅ | ADD | ADD | ADD | ❌ | ❌ | ❌ | ❌ | ❌ |
+| ANA Titer | -- | ❌ | ✅ | ADD | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| ANA Pattern | -- | ❌ | ✅ | ADD | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Rheumatoid Factor (RF) | -- | ❌ | ✅ | ADD | ADD | ADD | ❌ | ❌ | ❌ | ❌ | ❌ |
+| TPO Antibodies | 45P | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| TgAb | 45P | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| CCP Antibody | -- | ❌ | ❌ | ADD | ADD | ADD | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Celiac Panel | -- | ❌ | ❌ | ADD | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 Function Health includes ANA (screen/titer/pattern) + RF in base. Hundred Health **previously** included ANA (screen/titer/pattern) in base; the full ANA panel is now **not offered** on the current $199 panel (NO). Superpower autoimmunity is $139 add-on only. Mito offers $69 autoimmune screen add-on. TPO and TgAb also listed under Thyroid section above.
 
 ### 11. Cancer Screening
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| PSA Total | 45P | YES | YES | YES | YES | YES | NO | YES | NO | NO | YES | ? | YES |
-| PSA Free | -- | NO | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| PSA % Free | -- | NO | CALC | NO | NO | NO | NO | NO | NO | NO | NO | ? | NO |
-| Galleri Multi-Cancer | -- | ADD | ADD | ADD | ADD | ADD | ADD | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| PSA Total | 45P | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ |
+| PSA Free | -- | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| PSA % Free | -- | ❌ | CALC | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Galleri Multi-Cancer | -- | ADD | ADD | ADD | ADD | ADD | ADD | ❌ | ❌ | ❌ | ❌ |
 
 InsideTracker and WHOOP both missing PSA. Hundred Health: PSA Total retained in base; PSA Free / % Free not offered on the current $199 panel (NO). Galleri available as add-on from Function ($899), Superpower ($849), Hundred (**"Coming Q1 2026"** — not confirmed live as of 2026-06-08, no published price), Mito Ultra ($949 or $1,699 tier). **Galleri PPV caveat:** Galleri's positive predictive value is 38-44%, meaning 56-62% of positive results are false positives. This is important context for anyone considering the add-on -- a positive Galleri result requires confirmatory testing and should not be interpreted as a diagnosis.
 
 ### 12. Heavy Metals / Toxins
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Lead | -- | NO | YES | ADD | YES | ADD | NO | NO | NO | NO | ADD | ? | NO |
-| Mercury | -- | NO | YES | ADD | YES | ADD | NO | NO | NO | NO | ADD | ? | NO |
-| Arsenic | -- | NO | NO | ADD | YES | ADD | NO | NO | NO | NO | ADD | NO | NO |
-| Cadmium | -- | NO | NO | ADD | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| 20-metal urine panel | -- | NO | NO | ADD | NO | NO | ADD | NO | NO | NO | NO | NO | NO |
-| 27-marker enviro toxins | -- | NO | NO | ADD | NO | NO | ADD | NO | NO | NO | NO | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lead | -- | ❌ | ✅ | ADD | ✅ | ADD | ❌ | ❌ | ❌ | ❌ | ADD |
+| Mercury | -- | ❌ | ✅ | ADD | ✅ | ADD | ❌ | ❌ | ❌ | ❌ | ADD |
+| Arsenic | -- | ❌ | ❌ | ADD | ✅ | ADD | ❌ | ❌ | ❌ | ❌ | ADD |
+| Cadmium | -- | ❌ | ❌ | ADD | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| 20-metal urine panel | -- | ❌ | ❌ | ADD | ❌ | ❌ | ADD | ❌ | ❌ | ❌ | ❌ |
+| 27-marker enviro toxins | -- | ❌ | ❌ | ADD | ❌ | ❌ | ADD | ❌ | ❌ | ❌ | ❌ |
 
 Function Health includes Lead + Mercury in base. Hundred Health **previously** included Lead only; the heavy-metals category is gone from the current $199 panel and Lead is now **not offered** (NO). Mito Pro adds Lead, Mercury, Arsenic. Superpower heavy metals ($129) and enviro toxins ($299) are urine-based add-ons. SiPhox cannot test heavy metals from capillary blood.
 
 ### 13. Urinalysis
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Full Urinalysis (15-27 params) | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Urine pH | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Urine Specific Gravity | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Urine Protein | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Urine Glucose | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
-| Urine Ketones | -- | YES | YES | YES | YES | YES | NO | NO | NO | NO | NO | ? | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Full Urinalysis (15-27 params) | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Urine pH | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Urine Specific Gravity | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Urine Protein | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Urine Glucose | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Urine Ketones | -- | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 Function Health 16-marker urinalysis in Annual draw. Superpower 15-marker in Advanced only. Hundred Health 27-parameter urinalysis still present on the current page (retained, YES); baseline noted 2x/yr but the live page no longer states frequency. Mito 21-marker urine panel in Core.
 
 ### 14. Other / Specialty
 
-| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Amylase | -- | NO | YES | NO | YES | YES | NO | NO | NO | NO | NO | NO | NO |
-| Lipase | -- | NO | YES | NO | YES | YES | NO | NO | NO | NO | NO | NO | NO |
-| Creatine Kinase (CK) | -- | NO | NO | NO | NO | NO | NO | NO | NO | YES | NO | NO | NO |
-| Biological Age | -- | CALC | CALC | CALC | CALC | CALC | CALC | ADD | NO | ADD | YES | NO | ? |
-| Adiponectin | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO | NO |
-| Glycomark (1,5-AG) | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO | NO |
-| Beta Amyloid 42/40 | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO | NO |
-| pTau-217 | -- | NO | NO | NO | NO | NO | NO | NO | NO | NO | ADD | NO | NO |
+| Biomarker | 45P | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Amylase | -- | ❌ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Lipase | -- | ❌ | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Creatine Kinase (CK) | -- | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Biological Age | -- | CALC | CALC | CALC | CALC | CALC | CALC | ADD | ❌ | ADD | ✅ |
+| Adiponectin | -- | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ADD |
+| Glycomark (1,5-AG) | -- | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ADD |
+| Beta Amyloid 42/40 | -- | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ADD |
+| pTau-217 | -- | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ADD |
 
 Lifeforce brain protection panel ($200 add-on) includes Beta Amyloid, pTau-217, GFAP, ApoE genotype. InsideTracker uniquely includes Creatine Kinase. Biological age offered by most services but methodologies vary (blood-algorithm vs. epigenetic/DNA methylation).
 
 ### Summary: 45-Test Target Panel Coverage
 
-| Metric | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF | UH | GV |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Directly measured from 45** | 21 | 32 | ~33 | 36 | 30 | 17 | 24 | ~24 | ~22 | ~20 | ? | ~30 |
-| **Coverage %** | **47%** | **71%** | **73%** | **80%** | **67%** | **38%** | **53%** | **53%** | **49%** | **44%** | **?** | **67%** |
-| **Annual cost** | $199 | $365 | $388 | $549 | $349 | $199 | $450 | $588 | $829 | $599 | $499 | $1,529 |
-| **Cost per 45P test covered** | $9.48 | $11 | $12 | $15 | $12 | $12 | $19 | $25 | $38 | $30 | ? | $51 |
+| Metric | HH | FH | SP-A | MP | MC | SP-B | SiP | WP | IT | LF |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Directly measured from 45** | 21 | 32 | ~33 | 36 | 30 | 17 | 24 | ~24 | ~22 | ~20 |
+| **Coverage %** | **47%** | **71%** | **73%** | **80%** | **67%** | **38%** | **53%** | **53%** | **49%** | **44%** |
+| **Annual cost** | $199 | $365 | $388 | $549 | $349 | $199 | $450 | $588 | $829 | $599 |
+| **Cost per 45P test covered** | $9.48 | $11 | $12 | $15 | $12 | $12 | $19 | $25 | $38 | $30 |
 
 > **HH denominator note:** This row is **$/45-panel-test-covered** ($199 ÷ 45-panel hits: $199 ÷ 21 = $9.48) — a *different* metric from the **$/directly-measured-biomarker** "$2.80" shown in S2, S6.1, and S7.2 ($199 ÷ measured count). They are not in conflict; they use different denominators. See S6.1 footnote ^4 for the full key.
 
