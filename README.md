@@ -13,15 +13,15 @@ An independent, reproducible ranking of **15 membership blood-testing services**
 
 | # | Service | $/yr | Score |
 |---|---------|------|-------|
-| 1 | **Function Health** | $365 | **7.45** |
-| 2 | **Hundred Health** | $199 | **7.10** |
-| 3 | Superpower Base+Adv | $388 | 6.95 |
-| 4 | Superpower Base Only | $199 | 6.45 |
-| 5 | Mito Health Pro | $549 | 6.30 |
-| … | *(11 more in the report)* | | |
+| 1 | **Hundred Health** | $199 | **7.60** |
+| 2 | **Function Health** | $365 | **7.20** |
+| 3 | Superpower Base+Adv | $388 | 6.80 |
+| 4 | Mito Health Pro | $549 | 6.60 |
+| 5 | Mito Health Core | $349 | 6.35 |
+| … | *(10 more in the report)* | | |
 
-- **Best Overall — Function Health:** the broadest directly-measured panel (~92 markers), 2 draws/yr, strong value.
-- **Best Value — Hundred Health:** the field's top Value score (lowest cost per biomarker at the lowest price), and the cheapest service with confirmed Garmin sync.
+- **Best Overall & Best Value — Hundred Health:** tops the weighted ranking and wins the Value category outright (lowest cost per biomarker, ~$2.80, at the lowest price, $199), plus confirmed Garmin sync + 450+ automated EHR import.
+- **Best for Comprehensive Breadth — Function Health:** the broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals), 2 draws/yr.
 - No single service covers the full 45-test reference panel — completing it takes some à-la-carte gap-fill regardless of choice.
 
 ## Scoring methodology
@@ -30,8 +30,8 @@ Each service is scored 1–10 across seven categories, then weighted:
 
 | Category | Weight |
 |---|---|
-| Priority Coverage (of a 45-test reference panel) | 5% |
-| Total Coverage (directly-measured breadth) | 30% |
+| Priority Coverage (of a 45-test reference panel) | 15% |
+| Total Coverage (directly-measured breadth) | 20% |
 | **Value** (50/50 blend: cost-efficiency + absolute affordability) | 30% |
 | Frequency (draws/yr + trend tracking) | 10% |
 | Unique Features | 10% |
