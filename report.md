@@ -65,7 +65,7 @@ The headline picks by use case. Every winner is drawn from the same weighted sco
 | **Lowest Price** | Hundred Health · Superpower Base ($199/yr) | The two cheapest comprehensive memberships evaluated |
 | **Most Complete Panel** | Mito Health Pro ($549/yr) | Highest coverage of the 45-test reference panel (36/45, 80%); uniquely includes Cystatin C + IGF-1 |
 | **Best for Wearable Users** | Hundred Health ($199/yr) | Confirmed Garmin sync + 450+ automated EHR import — at the lowest price of any confirmed-Garmin service |
-| **Best Data Export** | InsideTracker ($829/yr) | Garmin sync + native CSV export + 30 record uploads/yr |
+| **Best Data Integration** | InsideTracker ($829/yr) | Garmin sync + native CSV export + 30 record uploads/yr |
 | **Best for Frequent Monitoring** | Empirical Health ($399/yr) | The most draws per dollar — 3 draws/yr at ~$133/draw |
 
 ### Bottom Line
@@ -103,7 +103,7 @@ Every service is scored against one declared reference profile so the rankings a
 
 ### What This Report Covers
 
-This report provides complete service profiles, standardized biomarker counting, an objective weighted scoring rubric, and a broad search across membership services that offer comprehensive recurring blood panels (50+ biomarkers). Four services were examined in depth (Function Health, Superpower, Hundred Health, Mito Health) alongside ten additional discovered services.
+This report provides complete service profiles, standardized biomarker counting, an objective weighted scoring rubric, and a broad search across membership services that offer comprehensive recurring blood panels (50+ biomarkers). Four services were examined in depth (Function Health, Hundred Health, Superpower, Mito Health) alongside ten additional discovered services.
 
 ### The 5 Outputs
 
@@ -438,18 +438,18 @@ All biomarker counts use the canonical method: **"Directly measured unique analy
 
 **Unique Differentiators by Confirmed Service:**
 
-| Differentiator | Function | Superpower | Hundred | Mito |
+| Differentiator | Function | Hundred | Superpower | Mito |
 |---|---|---|---|---|
-| Garmin integration | No | Yes (Mar 2026, unverified) | **Yes (confirmed)** | No |
-| Medical record import (450+ EHR) | No | Upload past blood work | **Yes (unique)** | Upload past labs |
-| 1:1 clinician consultation | No | Health coaches only | Clinician protocol | **Yes (unique)** |
+| Garmin integration | No | **Yes (confirmed)** | Yes (Mar 2026, unverified) | No |
+| Medical record import (450+ EHR) | No | **Yes (unique)** | Upload past blood work | Upload past labs |
+| 1:1 clinician consultation | No | Clinician protocol | Health coaches only | **Yes (unique)** |
 | Cystatin C | No | No | No | **Pro only (unique)** |
-| Full NMR LipoProfile (base) | **Yes** | No (fractionation in Adv) | **No -- now absent** | Pro only |
-| Thyroid antibodies (base) | **Yes (unique at base)** | Advanced only | No | No |
+| Full NMR LipoProfile (base) | **Yes** | **No -- now absent** | No (fractionation in Adv) | Pro only |
+| Thyroid antibodies (base) | **Yes (unique at base)** | No | Advanced only | No |
 | RBC Magnesium (base) | **Yes** | No | No | **Yes** |
-| B12 + Folate (base) | Indirect B12 / Add-on Folate | Advanced only | No | **Yes (unique at base)** |
-| ESR (base) | No | Advanced only | No | **Yes** |
-| 2 draws/year included | **Yes** | No | **Yes** | No |
+| B12 + Folate (base) | Indirect B12 / Add-on Folate | No | Advanced only | **Yes (unique at base)** |
+| ESR (base) | No | No | Advanced only | **Yes** |
+| 2 draws/year included | **Yes** | **Yes** | No | No |
 
 ---
 
@@ -1386,12 +1386,10 @@ Function Health is the best value **where comprehensive coverage is the goal** (
 
 | Service | Caveat |
 |---------|--------|
+| **Hundred Health ($199)** | **Watch.** Price dropped ~60% to $199; with Value (30%) and Total Coverage (30%) the dominant weights and Priority Coverage at 5%, its **field-top blended Value (9.5)** — lowest cost per biomarker ($3.75) at the lowest price ($199) — plus confirmed Garmin, 450+ EHR import (Data Access 8), and field-best logistics (Convenience 8) lift it to **7.10 / rank #2**. But the blood panel was cut alongside the repricing, holding Total Coverage at 5. ~6 months old (launched Dec 2025). Maturity risk and the reduced panel are the main concerns; worth re-checking whether HH restores any dropped specialty markers. |
 | **Superpower Base+Advanced ($388)** | Active lawsuit; aggressive supplement upselling; FTC cancellation concerns. Good value if trust issues acceptable. Score 6.95 (#3). |
 | **Superpower Base Only ($199)** | Ranks **#4 (6.45)** on a strong blended Value — the $199 price (affordability 10) plus a low cost-per-biomarker ($3.62) — but covers only 17/45 priority markers (~55 measured, marketed as "100+"). Excellent value, insufficient as a *sole* comprehensive panel; same lawsuit / supplement-upsell concerns as Superpower B+A. |
-| **Hundred Health ($199)** | **Watch.** Price dropped ~60% to $199; with Value (30%) and Total Coverage (30%) the dominant weights and Priority Coverage at 5%, its **field-top blended Value (9.5)** — lowest cost per biomarker ($3.75) at the lowest price ($199) — plus confirmed Garmin, 450+ EHR import (Data Access 8), and field-best logistics (Convenience 8) lift it to **7.10 / rank #2**. But the blood panel was cut alongside the repricing, holding Total Coverage at 5. ~6 months old (launched Dec 2025). Maturity risk and the reduced panel are the main concerns; worth re-checking whether HH restores any dropped specialty markers. |
 | **Ultrahuman Blood Vision ($499)** | Individual biomarker list not published; cannot verify coverage claims. Without the §4.6 discount it would rank **#4 (6.90)**, but because that standing rested on an unpublished panel, the confidence discount (Priority/Total/Value-efficiency ×0.5) drops it to **5.20 / rank #11**. LOW confidence. |
-
----
 
 ### (f) Recommended Combination
 
@@ -1447,7 +1445,7 @@ This is less expensive than FH + Marek (~$691-710) but does NOT fill the 45-pane
 
 ## S9. Open Questions
 
-51 unresolved questions identified across the investigation (Hundred Health #30, #46, and the #54 panel-scope question all resolved), plus industry-wide structural risks. Organized by category with impact ratings.
+50 open questions remain across the services, plus industry-wide structural risks. Organized by category with impact ratings.
 
 ### 9.0 Industry Context: Structural Risks Affecting All Services
 
@@ -1498,7 +1496,7 @@ Investigative reporting by Sherwood News (Dec 2025) identified structural busine
 | 25 | Does Superpower offer multi-draw discounts or annual plans beyond single-draw pricing? | Low | Superpower |
 | 26 | What is Parsley Complete Care ($350/yr lab + ~$150/yr visit) total annual cost with labs? | Low | Parsley |
 
-### 9.3 Feature & Integration Questions (10 questions)
+### 9.3 Feature & Integration Questions (9 questions)
 
 | # | Question | Impact | Service |
 |---|----------|--------|---------|
@@ -1522,7 +1520,7 @@ Investigative reporting by Sherwood News (Dec 2025) identified structural busine
 | 40 | Is Superpower's Estradiol immunoassay or sensitive LC/MS-MS? | Low | Superpower |
 | 40a | OGTT (oral glucose tolerance test) is recommended by Peter Attia as a key metabolic test but is NOT available from any consumer membership blood testing service. Requires clinical ordering. Consider adding to gap-fill protocol. | High | All services |
 
-### 9.5 Trust & Operational Questions (8 questions)
+### 9.5 Trust & Operational Questions (7 questions)
 
 | # | Question | Impact | Service |
 |---|----------|--------|---------|
@@ -1548,12 +1546,12 @@ Investigative reporting by Sherwood News (Dec 2025) identified structural busine
 
 | Category | Count |
 |----------|-------|
-| Open questions (across all services) | ~50 |
-| High impact | 9 |
-| Medium impact | 27 |
-| Low impact | 14 |
+| Open questions (across all services) | 50 |
+| High impact | 11 |
+| Medium impact | 24 |
+| Low impact | 15 |
 
-**Services with the most open questions:** Hundred Health (5), Wild Health (5), Function Health (4), Superpower (4), SiPhox (4), Parsley (4), Fountain Life (4), Mito Health (3), Lifeforce (3).
+**Services with the most open questions:** Superpower (6), Function Health (5), Hundred Health (5), Mito Health (5), Lifeforce (5), SiPhox (5), Wild Health (4), Fountain Life (4), Parsley (4).
 
 ---
 
