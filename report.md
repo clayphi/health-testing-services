@@ -178,12 +178,12 @@ The 45-test panel is the defined coverage target used by this report for the Pri
 
 | Rank | Service | $/yr | Draws/yr | 45-Panel | Measured | $/Marker | Score | Confidence | Verdict |
 |------|---------|------|----------|----------|----------|----------|-------|------------|---------|
-| **1** | **Hundred Health** | $199 | 2 | 21/45 (47%) | ~71 | $2.80 ^4 | **7.60** | MEDIUM | Best all-around: wins Value outright (lowest cost per biomarker, $2.80, at the lowest price, $199), confirmed Garmin, 450+ EHR import, 100-day protocol, 2 draws/yr; ~6 months old; **reduced panel (24 of 45 priority markers not offered)** |
+| **1** | **Hundred Health** | $199 | 2 | 21/45 (47%) | ~71 | $2.80 | **7.60** | MEDIUM | Best all-around: wins Value outright (lowest cost per biomarker, $2.80, at the lowest price, $199), confirmed Garmin, 450+ EHR import, 100-day protocol, 2 draws/yr; leaner core panel; ~6 months old |
 | **2** | **Function Health** | $365 | 2 | 32/45 (71%) | ~92 | $3.97 | **7.20** | HIGH | Best for breadth: highest directly-measured count, NMR/ANA/metals, 2 draws/yr, strong app; missing Garmin and CSV natively |
-| **3** | **Superpower Base+Adv** | $388 | 1 | 33-34/45 (73-76%) | ~87 | $4.46 | **6.80** | HIGH | Competitive coverage at low price, Garmin sync (Mar 2026); active lawsuit, aggressive supplement upsell, 1 draw/yr |
+| **3** | **Superpower Base+Adv** | $388 | 1 | 33-34/45 (73-76%) | ~87 | $4.46 | **6.80** | MEDIUM | Competitive coverage at low price, Garmin sync (Mar 2026); but service launched Aug 2025 (new), active lawsuit, aggressive supplement upsell, 1 draw/yr |
 | **4** | **Mito Health Pro** | $549 | 1 | 36/45 (80%) | ~87-95 | ~$6.03 | **6.60** | HIGH | Best panel completeness: highest 45-panel hit rate, Cystatin C + IGF-1 unique; only 1 draw/yr, no app, no wearable, no data export, $549 price weighs on affordability |
 | **5** | **Mito Health Core** | $349 | 1 | 30/45 (67%) | ~75-80 | ~$4.50 | **6.35** | HIGH | Solid entry-level: B12, Folate, RBC Mg, ESR in base; 1 draw/yr, no NMR, no Garmin. Strong cost per biomarker (~$4.50) and low $349 price give it a high blended Value |
-| **6** | **Superpower Base Only** | $199 | 1 | 17/45 (38%) | ~55 | $3.62 | **6.30** | HIGH | Cheapest comprehensive entry: $199 + strong cost-per-biomarker drive a high blended Value; but only 17/45 priority, insufficient as a sole comprehensive panel |
+| **6** | **Superpower Base Only** | $199 | 1 | 17/45 (38%) | ~55 | $3.62 | **6.30** | MEDIUM | Cheapest comprehensive entry: $199 + strong cost-per-biomarker drive a high blended Value; but only 17/45 priority, service launched Aug 2025 (new), insufficient as a sole comprehensive panel |
 | **7** | **SiPhox Health U360** | $450 | 2 | 24/45 (53%) | ~45 | $10.00 | **5.35** | MEDIUM | Maximum convenience (at-home); documented accuracy problems, no CBC, borderline count |
 | **8** | **WHOOP Advanced Labs** | $588 | 2 | ~24/45 est. | ~50-55 | $10.69 | **5.20** | MEDIUM | Best wearable-blood correlation (HRV/sleep/strain); requires WHOOP membership, no Garmin, no at-home, limited thyroid |
 | **9** | **Empirical Health** | $399 | 3 | ~25-30/45 est. | ~45-50 | $8.31 | **5.15** | LOW | Best draw frequency at low cost; no hormones, heart-health only |
@@ -1215,7 +1215,7 @@ All scores are justified with specific data from the service profiles in S3. Sta
 | Service | Pri Cov | Tot Cov | Value | Freq | Unique | Data | Conv | **Total** | Confidence |
 |---------|---------|---------|-------|------|--------|------|------|-----------|------------|
 | Mito Health Core ($349) | 6 | 7 | 7.5 | 4 | 6 | 5 | 6 | **6.35** | HIGH |
-| Superpower Base Only ($199) | 3 | 5 | 8.5 | 6 | 6 | 7 | 8 | **6.30** | HIGH |
+| Superpower Base Only ($199) | 3 | 5 | 8.5 | 6 | 6 | 7 | 8 | **6.30** | MEDIUM |
 | SiPhox Health U360 ($450) | 4 | 4 | 5.5 | 7 | 7 | 6 | 6 | **5.35** | MEDIUM |
 | WHOOP Advanced Labs ($588) | 4 | 5 | 4.5 | 7 | 6 | 6 | 7 | **5.20** | MEDIUM |
 | Empirical Health ($399) | 5 | 4 | 6 | 8 | 3 | 4 | 6 | **5.15** | LOW |
@@ -1234,10 +1234,10 @@ All scores are justified with specific data from the service profiles in S3. Sta
 |------|---------|------|----------|----------|----------|----------|----------|------------|
 | **1** | **Hundred Health** | $199 | 2 | 21/45 (47%) | ~71 | $2.80 ^4 | **7.60** | MEDIUM |
 | **2** | **Function Health** | $365 | 2 | 32/45 (71%) | ~92 | $3.97 | **7.20** | HIGH |
-| **3** | **Superpower Base+Adv** | $388 | 1 | 33-34/45 (73-76%) | ~87 | $4.46 | **6.80** | HIGH |
+| **3** | **Superpower Base+Adv** | $388 | 1 | 33-34/45 (73-76%) | ~87 | $4.46 | **6.80** | MEDIUM |
 | **4** | **Mito Health Pro** | $549 | 1 | 36/45 (80%) | ~87-95 | ~$6.03 | **6.60** | HIGH |
 | **5** | **Mito Health Core** | $349 | 1 | 30/45 (67%) | ~75-80 | ~$4.50 | **6.35** | HIGH |
-| **6** | **Superpower Base Only** | $199 | 1 | 17/45 (38%) | ~55 | $3.62 | **6.30** | HIGH |
+| **6** | **Superpower Base Only** | $199 | 1 | 17/45 (38%) | ~55 | $3.62 | **6.30** | MEDIUM |
 | **7** | **SiPhox Health U360** | $450 | 2 | 24/45 (53%) | ~45 | $10.00 | **5.35** | MEDIUM |
 | **8** | **WHOOP Advanced Labs** | $588 | 2 | ~24/45 est. | ~50-55 | $10.69 | **5.20** | MEDIUM |
 | **9** | **Empirical Health** | $399 | 3 | ~25-30/45 est. | ~45-50 | $8.31 | **5.15** | LOW |
