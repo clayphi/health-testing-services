@@ -1,8 +1,6 @@
 # Membership Health Testing Services: Comprehensive Comparison Report
 
-*Category weights set to Priority Coverage 15% · Total Coverage 20% · Value 30% · Frequency 10% · Unique Features 10% · Data Access 10% · Convenience 5%.*
-
-*Confidence discount (§4.6): services that do not publish their biomarker list have Priority Coverage, Total Coverage, and the Value cost-efficiency leg ×0.5 (Ultrahuman, Geviti, Parsley); absolute affordability is never discounted, since the annual price is a verified fact.*
+*An independent, reproducible comparison by **clayphi**.*
 
 **Scope:** All US membership health-testing services with 50+ biomarkers, on a recurring-membership model
 **Reference panel:** A 45-test, male-inclusive longevity panel (see S4 §4.1 for the declared category weights and scoring assumptions)
@@ -30,7 +28,11 @@
 
 ## S0. Executive Summary
 
-**Hundred Health ($199/yr) is the best all-around membership blood-testing service for comprehensive longevity monitoring** (7.60/10) — it wins the Value category outright (lowest cost per biomarker, ~$2.80, at the lowest price, $199), pairs that with confirmed Garmin sync plus automated full medical-record import (450+ EHR systems) and field-best logistics, and tops the weighted ranking. **Function Health ($365/yr) is the best choice where comprehensive clinical breadth is the goal** (7.20/10) — the broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals) with two draws a year. Fifteen services were scored on a transparent 7-category weighted rubric (Value 30%, Total Coverage 20%, Priority Coverage 15% the largest weights); every score comes from a published engine that anyone can re-weight and re-run. No single service covers the full 45-test reference panel, so completing it takes some à-la-carte gap-fill regardless of choice.
+**Hundred Health ($199/yr) is the best all-around membership blood-testing service for comprehensive longevity monitoring** (7.60/10). It wins the Value category outright (lowest cost per biomarker, ~$2.80, at the lowest price, $199), pairs that with confirmed Garmin sync plus automated full medical-record import (450+ EHR systems) and field-best logistics, and tops the weighted ranking.
+
+**Function Health ($365/yr) is the best choice where comprehensive clinical breadth is the goal** (7.20/10): the broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals) with two draws a year.
+
+Fifteen services were scored on a transparent 7-category weighted rubric (Value 30%, Total Coverage 20%, Priority Coverage 15% the largest weights); every score comes from a published engine that anyone can re-weight and re-run. No single service covers the full 45-test reference panel, so completing it takes some à-la-carte gap-fill regardless of choice.
 
 ### Ranked at a Glance
 
@@ -52,44 +54,44 @@
 | **14** | Wild Health | $4,345 | **3.90** |
 | **15** | Geviti Plus † | $1,529 | **3.58** |
 
-† Biomarker list not published — Priority Coverage, Total Coverage, and the Value cost-efficiency leg are confidence-discounted ×0.5 (§4.6). The full table with verdicts, per-marker cost, and coverage is in S2; per-category scoring is in S7.
+† Biomarker list not published, Priority Coverage, Total Coverage, and the Value cost-efficiency leg are confidence-discounted ×0.5 (§4.6). The full table with verdicts, per-marker cost, and coverage is in S2; per-category scoring is in S7.
 
 ### Category Awards
 
-The headline picks by use case. Every winner is drawn from the same weighted scoring — the full ranked table is in S2, per-category detail is in S7, and the rationale for each pick is in S8.
+The headline picks by use case. Every winner is drawn from the same weighted scoring, the full ranked table is in S2, per-category detail is in S7, and the rationale for each pick is in S8.
 
 | Category | Winner | Why it wins |
 |---|---|---|
-| **Best Overall** | Hundred Health ($199/yr) | Tops the weighted ranking (7.60): wins the Value category outright, plus confirmed Garmin sync, 450+ automated EHR import, and field-best logistics — if the leaner $199 core panel is acceptable |
-| **Best for Comprehensive Breadth** | Function Health ($365/yr) | The broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals) plus 2 draws/yr — weighted 7.20, the top pick when panel completeness is the priority |
+| **Best Overall** | Hundred Health ($199/yr) | Tops the weighted ranking (7.60): wins the Value category outright, plus confirmed Garmin sync, 450+ automated EHR import, and field-best logistics, if the leaner $199 core panel is acceptable |
+| **Best for Comprehensive Breadth** | Function Health ($365/yr) | The broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals) plus 2 draws/yr, weighted 7.20, the top pick when panel completeness is the priority |
 | **Best Value** | Hundred Health ($199/yr) | The field's top Value score (10): the lowest cost per biomarker ($2.80) at the lowest price ($199) |
 | **Lowest Price** | Hundred Health · Superpower Base ($199/yr) | The two cheapest comprehensive memberships evaluated |
 | **Most Complete Panel** | Mito Health Pro ($549/yr) | Highest coverage of the 45-test reference panel (36/45, 80%); uniquely includes Cystatin C + IGF-1 |
-| **Best for Wearable Users** | Hundred Health ($199/yr) | Confirmed Garmin sync + 450+ automated EHR import — at the lowest price of any confirmed-Garmin service |
+| **Best for Wearable Users** | Hundred Health ($199/yr) | Confirmed Garmin sync + 450+ automated EHR import, at the lowest price of any confirmed-Garmin service |
 | **Best Data Integration** | InsideTracker ($829/yr) | Garmin sync + native CSV export + 30 record uploads/yr |
-| **Best for Frequent Monitoring** | Empirical Health ($399/yr) | The most draws per dollar — 3 draws/yr at ~$133/draw |
+| **Best for Frequent Monitoring** | Empirical Health ($399/yr) | The most draws per dollar, 3 draws/yr at ~$133/draw |
 
 ### Bottom Line
 
-**Hundred Health ($199/yr) is the top all-around pick** (weighted 7.60) — it wins the Value category outright (lowest cost per biomarker, ~$2.80, at the lowest price, $199), adds confirmed Garmin sync plus 450+ automated EHR import and a 100-day protocol, and posts field-best logistics. Trade-off: its reduced $199 panel covers 21/45 (47%) of the priority markers vs Function Health's 32/45 (71%), and the service is only ~6 months old.
+**Hundred Health ($199/yr) is the top all-around pick** (weighted 7.60). It wins the Value category outright (lowest cost per biomarker, ~$2.80, at the lowest price, $199), adds confirmed Garmin sync plus 450+ automated EHR import and a 100-day protocol, and posts field-best logistics. Trade-off: its reduced $199 panel covers 21/45 (47%) of the priority markers vs Function Health's 32/45 (71%), and the service is only ~6 months old.
 
 **If comprehensive clinical breadth is the priority:** Function Health ($365/yr, weighted 7.20) has the broadest directly-measured panel (~92 markers incl. NMR/ANA/heavy metals) with 2 draws/yr. No single service covers all 45 target tests, so completing the panel takes roughly $326-345/yr of à-la-carte gap-fill (e.g., via a DTC lab such as Marek Health), reaching 42/45 direct coverage (93%) for a combined ~$691-710/yr. **For maximum 45-panel hit rate**, Mito Health Pro ($549/yr) leads at 36/45 (80%), but with only 1 draw/yr and no wearable sync or data export.
 
 **If raw-data export also matters:** InsideTracker ($829/yr) pairs Garmin with native CSV export and cross-platform trending.
 
-**Completing the panel:** no membership service covers all 45 targets — common gaps (Fibrinogen, LP-PLA2, Oxidized LDL, C-Peptide, Copper, Ceruloplasmin) require à-la-carte DTC ordering regardless of the service chosen. Service and lab availability vary by state; confirm both before purchasing.
+**Completing the panel:** no membership service covers all 45 targets, common gaps (Fibrinogen, LP-PLA2, Oxidized LDL, C-Peptide, Copper, Ceruloplasmin) require à-la-carte DTC ordering regardless of the service chosen. Service and lab availability vary by state; confirm both before purchasing.
 
 ### Adjust the weights yourself
 
-These category weights are **editorial choices**, not universal truths — so try your own. The interactive **Weight Explorer** below loads with this report's default weighting applied; drag any of the seven category sliders (they always total 100%, and you can 🔒 lock the ones you care about) and all 15 services re-rank live.
+These category weights are **editorial choices**, not universal truths, so try your own. The interactive **Weight Explorer** below loads with this report's default weighting applied; drag any of the seven category sliders (they always total 100%, and you can 🔒 lock the ones you care about) and all 15 services re-rank live.
 
-<iframe class="explorer-embed" src="explore.html" title="Interactive Weight Explorer — adjust category weights and re-rank the 15 services live" loading="lazy" style="width:100%;height:1040px;border:1px solid #ddd6c6;border-radius:14px;background:#fbf9f4;"></iframe>
+<iframe class="explorer-embed" src="explore.html" title="Interactive Weight Explorer, adjust category weights and re-rank the 15 services live" loading="lazy" style="width:100%;height:1040px;border:1px solid #ddd6c6;border-radius:14px;background:#fbf9f4;"></iframe>
 
 <script>
 window.addEventListener('message',function(e){if(e.data&&e.data.explorerHeight){var f=document.querySelector('iframe.explorer-embed');if(f){var h=Math.min(e.data.explorerHeight+8,2800);if(Math.abs((parseInt(f.style.height)||0)-h)>2)f.style.height=h+'px';}}});
 </script>
 
-> **▸ [Open the Weight Explorer full-screen](explore.html)** — same tool, its own page. *(Interactive on the web version; in print/PDF, use the link.)*
+> **▸ [Open the Weight Explorer full-screen](explore.html)**, same tool, its own page. *(Interactive on the web version; in print/PDF, use the link.)*
 
 ---
 
@@ -630,6 +632,10 @@ All biomarker counts use the canonical method: **"Directly measured unique analy
 ---
 
 ## S4. Scoring Methodology (Output 2)
+
+*Category weights: Priority Coverage 15% · Total Coverage 20% · Value 30% · Frequency 10% · Unique Features 10% · Data Access 10% · Convenience 5%.*
+
+*Confidence discount (§4.6): services that do not publish their biomarker list have Priority Coverage, Total Coverage, and the Value cost-efficiency leg ×0.5 (Ultrahuman, Geviti, Parsley); absolute affordability is never discounted, since the annual price is a verified fact.*
 
 ### 4.1 Weighted Scoring Categories
 

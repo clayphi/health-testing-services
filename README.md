@@ -1,5 +1,7 @@
 # Membership Health Testing Services — Comprehensive Comparison
 
+*By **clayphi**.*
+
 An independent, reproducible ranking of **15 membership blood-testing services** for comprehensive longevity-oriented health monitoring. Every service is scored on a transparent 7-category weighted rubric, and every number in the report is produced by a published scoring engine you can re-weight and re-run.
 
 **📄 Read the report:**
