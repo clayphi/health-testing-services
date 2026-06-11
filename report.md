@@ -86,7 +86,7 @@ These category weights are **editorial choices**, not universal truths — so tr
 <iframe class="explorer-embed" src="explore.html" title="Interactive Weight Explorer — adjust category weights and re-rank the 15 services live" loading="lazy" style="width:100%;height:1040px;border:1px solid #ddd6c6;border-radius:14px;background:#fbf9f4;"></iframe>
 
 <script>
-window.addEventListener('message',function(e){if(e.data&&e.data.explorerHeight){var f=document.querySelector('iframe.explorer-embed');if(f)f.style.height=(e.data.explorerHeight+8)+'px';}});
+window.addEventListener('message',function(e){if(e.data&&e.data.explorerHeight){var f=document.querySelector('iframe.explorer-embed');if(f){var h=Math.min(e.data.explorerHeight+8,2800);if(Math.abs((parseInt(f.style.height)||0)-h)>2)f.style.height=h+'px';}}});
 </script>
 
 > **▸ [Open the Weight Explorer full-screen](explore.html)** — same tool, its own page. *(Interactive on the web version; in print/PDF, use the link.)*

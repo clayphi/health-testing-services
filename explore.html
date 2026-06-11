@@ -212,7 +212,7 @@ function render(){
   });
   postH();
 }
-function postH(){ try{ if(parent&&parent!==window) parent.postMessage({explorerHeight:document.documentElement.scrollHeight},'*'); }catch(e){} }
+function postH(){ try{ if(parent&&parent!==window){ var w=document.querySelector('.wrap'); var h=w?Math.ceil(w.offsetHeight):document.body.scrollHeight; parent.postMessage({explorerHeight:h},'*'); } }catch(e){} }
 window.addEventListener('load',postH); window.addEventListener('resize',postH);
 buildPresets(); buildSliders(); render();
 </script>
