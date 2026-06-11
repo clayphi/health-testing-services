@@ -32,3 +32,5 @@ code { font-family: "SF Mono", Menlo, monospace; font-size: 8.5pt; background: #
 blockquote { border-left: 3px solid #2c5f8a; margin: 0.6em 0; padding: 0.2em 0.9em; background: #f6f9fb; color: #333; }
 hr { border: none; border-top: 1px solid #dde3e8; margin: 1.2em 0; }
 strong { color: #111; }
+/* interactive weight-explorer iframe can't render in print — hide it; the intro + link remain */
+.explorer-embed { display: none !important; }

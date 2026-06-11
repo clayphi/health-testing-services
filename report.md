@@ -79,6 +79,18 @@ The headline picks by use case. Every winner is drawn from the same weighted sco
 
 **Completing the panel:** no membership service covers all 45 targets — common gaps (Fibrinogen, LP-PLA2, Oxidized LDL, C-Peptide, Copper, Ceruloplasmin) require à-la-carte DTC ordering regardless of the service chosen. Service and lab availability vary by state; confirm both before purchasing.
 
+### Adjust the weights yourself
+
+These category weights are **editorial choices**, not universal truths — so try your own. The interactive **Weight Explorer** below loads with this report's default weighting applied; drag any of the seven category sliders (they always total 100%, and you can 🔒 lock the ones you care about) and all 15 services re-rank live.
+
+<iframe class="explorer-embed" src="explore.html" title="Interactive Weight Explorer — adjust category weights and re-rank the 15 services live" loading="lazy" style="width:100%;height:1040px;border:1px solid #ddd6c6;border-radius:14px;background:#fbf9f4;"></iframe>
+
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.explorerHeight){var f=document.querySelector('iframe.explorer-embed');if(f)f.style.height=(e.data.explorerHeight+8)+'px';}});
+</script>
+
+> **▸ [Open the Weight Explorer full-screen](explore.html)** — same tool, its own page. *(Interactive on the web version; in print/PDF, use the link.)*
+
 ---
 
 ## S1. Problem Statement
@@ -112,7 +124,7 @@ This report provides complete service profiles, standardized biomarker counting,
 |---|---|
 | **1. Complete Service Profiles** | For every confirmed and discovered service: pricing, complete biomarker inventory, features, lab logistics, trust/track record |
 | **2. Objective Scoring Methodology** | Transparent, weighted 7-category scoring system (Priority Coverage 15%, Total Coverage 20%, Value 30%, Frequency 10%, Unique Features 10%, Data Access 10%, Convenience 5%) with 1-10 rubrics |
-| **3. Coverage Matrix** | Every unique biomarker across all services (rows) x each service (columns), with YES / NO / CALC / ADD-ON notation |
+| **3. Coverage Matrix** | Every unique biomarker across all services (rows) x each service (columns), with ✅ / ❌ / CALC / ADD notation |
 | **4. Feature Comparison Matrix** | Every non-biomarker feature (rows) x each service (columns) |
 | **5. Final Recommendation** | Best overall, best value, best data integration, best for monitoring, services to avoid, recommended combination |
 
